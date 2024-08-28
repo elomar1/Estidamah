@@ -521,8 +521,8 @@ img {
       transition: 0.5s;
 
       font-family: var(--text-lg-regular-font-family);
-      font-weight: var(--text-lg-regular-font-weight);
       color: var(--themes-text-text-primary-paragraph);
+      font-weight: var(--text-lg-regular-font-weight);
       font-size: var(--text-lg-regular-font-size);
       letter-spacing: var(--text-lg-regular-letter-spacing);
       line-height: var(--text-lg-regular-line-height);
@@ -1873,12 +1873,12 @@ img {
     .mainTitle {
       font-family: var(--display-md-regular-font-family);
       font-weight: var(--display-md-regular-font-weight);
-      color: var(--themes-text-text-default-duplicate);
+      color: var(--themes-text-text-default);
       font-size: var(--display-md-regular-font-size);
       letter-spacing: var(--display-md-regular-letter-spacing);
       line-height: var(--display-md-regular-line-height);
       font-style: var(--display-md-regular-font-style);
-      margin-bottom: var(--primitives-spacing-6-24px);
+      margin-bottom: var(--primitives-spacing-8-32px);
       span {
         font-family: var(--display-lg-semibold-font-family);
         font-weight: var(--display-lg-semibold-font-weight);
@@ -2030,7 +2030,7 @@ img {
         width: 15px;
         height: 15px;
       }
-      h5 {
+      h5 , a{
         font-weight: var(--text-md-semibold-font-weight);
         font-size: var(--text-md-semibold-font-size);
         line-height: var(--text-md-semibold-line-height);
@@ -2039,10 +2039,10 @@ img {
       }
     }
     .content-box {
-      padding: var(--primitives-spacing-2-8px)
-        var(--primitives-spacing-10-40px-duplicate)
-        var(--primitives-spacing-2-8px) var(--spacing-button-buttons-lg-padding);
-      p {
+      p , a{
+        padding: var(--primitives-spacing-2-8px)
+          var(--primitives-spacing-10-40px-duplicate)
+          var(--primitives-spacing-2-8px) var(--spacing-button-buttons-lg-padding);
         color: var(--themes-text-text-default);
         font-weight: var(--text-md-regular-font-weight);
         font-size: var(--text-md-regular-font-size);
