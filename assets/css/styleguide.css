@@ -1380,6 +1380,26 @@ You can apply the theme on any DOM node, not just the `body`
   --spacing-spacing-5xl: var(--primitives-spacing-10-40px-duplicate);
   --radius-radius-radius-sm: var(--primitives-radius-radius-4);
   --radius-radius-radius-xs: var(--primitives-radius-radius-2);
+
+
+
+
+
+
+  /*
+    added by mmousa
+  */
+
+  --display-lg-semibold-font-family: "IBM Plex Sans Arabic", Helvetica;
+  --display-lg-semibold-font-weight: 600;
+  --display-lg-semibold-font-size: 36px;
+  --display-lg-semibold-letter-spacing: -0.72px;
+  --display-lg-semibold-line-height: 44px;
+  --display-lg-semibold-font-style: normal;
+
+  --tag-text-success : #085D3A;
+  --tag-border-success-light : #ABEFC6;
+  --tag-background-success-light : #ECFDF3;
 }
 
 /*
