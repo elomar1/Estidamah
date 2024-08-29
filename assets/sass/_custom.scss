@@ -2101,7 +2101,7 @@ img {
       }
       p {
         font-size: var(--text-md-regular-font-size);
-        font-weight: var(--text-md-regular-font-weigh);
+        font-weight: var(--text-md-regular-font-weight);
         letter-spacing: var(--text-md-regular-letter-spacing);
         line-height: var(--text-md-regular-line-height);
       }
@@ -4193,7 +4193,7 @@ img {
                 }
                 span{
                   font-size: var(--text-md-regular-font-size);
-                  font-weight: var(--text-md-regular-font-weigh);
+                  font-weight: var(--text-md-regular-font-weight);
                   line-height: var(--text-md-regular-line-height);
                   color: var(--themes-text-text-default);
                 }
@@ -4461,4 +4461,128 @@ img {
 
 .project-details2{
   margin-bottom: 100px;
+}
+
+.consultations{
+  margin-top: 40px;
+  .DGA-tabs1{
+    margin-bottom: 40px;
+  }
+  .col-lg-4{
+    margin-bottom: 24px;
+  }
+  .consultations-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: var(--spacing-global-spacing-xl);
+    gap: var(--spacing-card-card-lg-gap);
+    border-radius: var(--radius-radius-lg);
+    border: 1px solid var(--themes-border-border-neutral-primary);
+    background: var(--themes-background-background-card);
+    .icon-box{
+      width: 48px;
+      height: 48px;
+      padding: 3px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .details-box{
+      h4{
+        color: var(--themes-text-text-primary);
+        font-size: var(--text-lg-bold-font-size);
+        font-weight: var(--text-lg-bold-font-weight);
+        line-height: var(--text-lg-bold-line-height);
+        margin-bottom: 8px;
+      }
+      p{
+        color: var(--themes-text-text-display);
+        font-size: var(--text-md-regular-font-size);
+        font-weight: var(--text-md-regular-font-weight);
+        line-height: var(--text-md-regular-line-height);
+        margin-bottom: 0;
+
+      }
+    }
+    .days-left{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: stretch;
+      padding: var(--spacing-global-spacing-xl);
+      gap: var(--spacing-global-spacing-md);
+      border-radius: var(--radius-radius-sm);
+      border: 1px dashed var(--themes-border-border-primary);
+      background: var(--themes-background-background-primary-50);
+
+      span{
+        color: var(--themes-text-text-primary);
+        font-size: var(--text-xl-semibold-font-size);
+        font-weight: var(--text-sm-medium-line-height);
+        line-height: var(--text-sm-medium-line-height);
+      }
+
+      &.warning{
+        border: 1px dashed var(--border-warning);
+        background: var(--themes-background-background-warning-50);
+        span{
+          color: var(--text-warning);
+        }
+      }
+      &.error{
+        border: 1px dashed var(--themes-border-border-error);
+        background: var(--background-error-50);
+        span{
+          color: var(--text-error);
+
+        }
+      }
+    }
+    .eventDates{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 24px;
+      padding: var(--spacing-global-spacing-none) var(--spacing-global-spacing-lg);
+      gap: var(--spacing-global-spacing-xs);
+      border-radius: var(--radius-radius-sm);
+      border: 1px solid var(--themes-border-border-neutral-secondary);
+      background: var(--themes-tag-tag-background-neutral-light);
+      .icon{
+
+      }
+      .date-here{
+        color: var(--themes-tag-tag-text-neutral);
+        font-size: var(--text-md-medium-font-size);
+        font-weight: var(--text-md-medium-font-weight);
+        line-height: var(--text-md-medium-line-height);
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        span{
+          color: inherit;
+          font-size: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+      }
+    }
+    .green-btn.leftSide{
+      width: 100%;
+    }
+  }
+
+
+  .pagination{
+    margin-top: 16px;
+    margin-bottom: 100px;
+  }
+}
+
+.orgContainer{
+  margin-top: 95px;
+  margin-bottom: 105px;
 }

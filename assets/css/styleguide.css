@@ -1404,6 +1404,15 @@ You can apply the theme on any DOM node, not just the `body`
   --tag-border-info-light : #B2DDFF;
   --tag-background-info-light: #EFF8FF;
   --tag-text-info: #1849A9 ;
+
+
+  --border-warning : #B54708;
+  --background-warning-50 : #FFFAEB;
+  --text-warning : #B54708;
+
+  --text-error : #B42318;
+  --background-error-50:#FEF3F2;
+
 }
 
 /*
