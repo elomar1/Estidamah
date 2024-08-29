@@ -1400,6 +1400,10 @@ You can apply the theme on any DOM node, not just the `body`
   --tag-text-success : #085D3A;
   --tag-border-success-light : #ABEFC6;
   --tag-background-success-light : #ECFDF3;
+
+  --tag-border-info-light : #B2DDFF;
+  --tag-background-info-light: #EFF8FF;
+  --tag-text-info: #1849A9 ;
 }
 
 /*

@@ -4935,6 +4935,21 @@ img {
   margin-top: var(--primitives-spacing-4-16px);
 }
 
+.main-with-img .content-box ul {
+  list-style: disc;
+  padding-right: 30px;
+  margin-top: var(--primitives-spacing-4-16px);
+}
+
+.main-with-img .content-box ul li {
+  color: var(--themes-text-text-default);
+  font-size: var(--text-xl-regular-font-size);
+  font-weight: var(--text-xl-regular-font-weight);
+  line-height: var(--text-xl-regular-line-height);
+  letter-spacing: var(--text-xl-regular-letter-spacing);
+  text-align: justify;
+}
+
 .main-with-img .img-box {
   border-radius: 20px;
   overflow: hidden;
@@ -5406,6 +5421,221 @@ img {
 
 .media-album .media-album-tabs .col-lg-4 {
   margin-bottom: 24px;
+}
+
+.tags-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.tags-sec .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: var(--spacing-global-spacing-none) var(--spacing-global-spacing-lg);
+  gap: var(--spacing-global-spacing-xs);
+  border-radius: var(--radius-radius-full);
+}
+
+.tags-sec .tag .icon-bx {
+  width: 18px;
+  height: 18px;
+}
+
+.tags-sec .tag .icon-bx img {
+  width: 100%;
+  height: 100%;
+}
+
+.tags-sec .tag span {
+  font-size: var(--text-md-medium-font-size);
+  font-weight: var(--text-md-medium-font-weight);
+  line-height: var(--text-md-medium-line-height);
+}
+
+.tags-sec .tag.green {
+  border: 1px solid var(--tag-border-success-light);
+  background: var(--tag-background-success-light);
+}
+
+.tags-sec .tag.green span {
+  color: var(--tag-text-success);
+}
+
+.tags-sec .tag.blue {
+  border: 1px solid var(--tag-border-info-light, #B2DDFF);
+  background: var(--tag-background-info-light, #EFF8FF);
+}
+
+.tags-sec .tag.blue span {
+  color: var(--tag-text-info);
+}
+
+.tags-sec .tag.white {
+  border: 1px solid var(--themes-border-border-neutral-secondary);
+  background: var(--themes-tag-tag-background-neutral-light);
+}
+
+.tags-sec .tag.white span {
+  color: var(--themes-tag-tag-text-neutral);
+}
+
+.project-details {
+  margin-bottom: 40px;
+}
+
+.project-details .content-box .details-box h6 {
+  color: var(--themes-text-text-secondary);
+  font-size: var(--text-xl-regular-font-size);
+  font-weight: var(--text-xl-regular-font-weight);
+  line-height: var(--text-xl-regular-line-height);
+  margin-bottom: 16px;
+}
+
+.experiment {
+  background-color: var(--themes-background-background-neutral-100);
+  padding-top: 55px;
+  padding-bottom: 60px;
+  margin-bottom: 40px;
+}
+
+.experiment h3 {
+  font-size: var(--display-sm-medium-font-size);
+  font-weight: var(--display-sm-medium-font-weight);
+  color: var(--themes-text-text-primary);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.experiment ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  list-style: disc;
+}
+
+.experiment ul li {
+  color: var(--themes-text-text-default);
+  font-size: var(--text-xl-regular-font-size);
+  font-weight: var(--text-xl-regular-font-weight);
+  line-height: var(--text-xl-regular-line-height);
+}
+
+.twoCards .goalCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  height: 220px;
+  padding: var(--spacing-global-spacing-xl);
+  gap: var(--spacing-card-card-lg-gap);
+  border-radius: var(--radius-radius-lg);
+  border: 1px solid var(--themes-border-border-neutral-primary);
+  background: var(--themes-background-background-card);
+}
+
+.twoCards .goalCard h3 {
+  font-size: var(--display-xs-medium-font-size);
+  font-weight: var(--display-xs-medium-font-weight);
+  line-height: var(--display-xs-medium-line-height);
+  color: var(--themes-text-text-primary);
+  margin-bottom: 8px;
+}
+
+.twoCards .goalCard .detBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.twoCards .goalCard .detBox p {
+  color: var(--themes-text-text-display);
+  font-size: var(--text-lg-regular-font-size);
+  font-weight: var(--text-lg-regular-font-weight);
+  line-height: var(--text-lg-regular-line-height);
+  margin-bottom: 10px;
+}
+
+.twoCards .goalCard .detBox p:last-child {
+  margin-bottom: 0;
+}
+
+.twoCards .goalCard .detBox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.twoCards .goalCard .detBox ul li {
+  color: var(--themes-text-text-display);
+  font-size: var(--text-lg-regular-font-size);
+  font-weight: var(--text-lg-regular-font-weight);
+  line-height: var(--text-lg-regular-line-height);
+  margin-bottom: 10px;
+}
+
+.twoCards .goalCard .detBox ul.dashed li {
+  text-indent: -5px;
+}
+
+.twoCards .goalCard .detBox ul.dashed li:before {
+  content: "-";
+  text-indent: -5px;
+}
+
+.project-details2 {
+  margin-bottom: 100px;
 }
 
 @media (min-width: 1400px) {
