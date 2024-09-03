@@ -3413,6 +3413,9 @@ img {
   .logo {
     overflow: hidden;
     border-radius: var(--radius-radius-lg);
+    width: 100%;
+    height: 265px;
+    overflow: hidden;
     img {
     transition: .25s;
      height: 100%;
