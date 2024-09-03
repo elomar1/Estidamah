@@ -955,7 +955,7 @@ img {
 
 .customTable.table > :not(caption) > * > * {
   padding: 10px 16px;
-  min-height: 55px;
+  line-height: 26px;
 }
 
 .customTable thead th {
