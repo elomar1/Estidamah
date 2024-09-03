@@ -599,6 +599,7 @@ img {
   #{$start-direction}: 0;
   height: 106px;
   background-color: var(--themes-background-background-menu);
+  border-bottom: 1px solid var(--primitives-colors-neutral-300);
   .navDGA {
     padding-top: 10px;
   }
@@ -2357,15 +2358,20 @@ img {
     display: flex;
     align-items: end;
     padding-bottom: 40px;
+    padding: 0 4%;
     .cardElct {
-      margin-bottom: 60px;
+      margin-bottom: 80px;
+    }
+    .swiper-pagination{
+      bottom: 32px;
     }
   }
 
   .right-sec.with-shape.leftWithBgWhite {
-    margin-right: 95px;
+    margin-right: 20px;
     padding-left: 0;
     padding-right: 70px;
+    margin-left: 20%;
     background-color: var(--themes-background-background-white);
     .mainTitle {
       color: var(--themes-text-text-default-duplicate);
@@ -2442,7 +2448,7 @@ img {
   .title {
     &.yellow {
       color: #dba102;
-      margin-right: 15px;
+      margin-right: 0px;
     }
     margin-bottom: 24px;
     color: #161616;
@@ -2680,6 +2686,9 @@ img {
 .aimSec {
   background: #f3f4f6;
   padding: 40px 0;
+  .col-md-3{
+    width: 20%;
+  }
   .textAim {
     text-align: center;
     .title {
@@ -3018,10 +3027,11 @@ img {
   text-decoration: underline;
 }
 .ElectronicSec .electWrapper .cardElct {
-  min-height: 200px;
+  min-height: 220px;
 }
 .whiteBg {
-  background-color: #e5e7eb;
+  // background-color: #e5e7eb;
+  background: var(--themes-background-background-neutral-50);
 }
 
 
@@ -3030,6 +3040,7 @@ img {
   .col-md-4 {
     margin-bottom: 20px;
   }
+  
   .PRTCard {
     padding: var(--spacing-global-spacing-xl);
     background-color: var(--themes-background-background-card);
@@ -3340,6 +3351,8 @@ img {
       .logo {
         border-radius: var(--radius-radius-lg);
         overflow: hidden;
+        width: 100%;
+        height: 170px;
         img {
          height: 100%;
          border-radius: var(--radius-radius-lg);
@@ -3833,7 +3846,7 @@ img {
     .img-box{
       border-radius: 20px;
       overflow: hidden;
-      width: 600px;
+      max-width: 600px;
       height: 500px;
       margin-right: auto;
        > div{
@@ -4450,7 +4463,8 @@ img {
     align-items: center;
     flex-direction: column;
     flex: 1 0 0;
-    height: 220px;
+    min-height: 220px;
+    height: 100%;
     padding: var(--spacing-global-spacing-xl);
     gap: var(--spacing-card-card-lg-gap);
     border-radius: var(--radius-radius-lg);
@@ -4474,6 +4488,7 @@ img {
         font-weight: var(--text-lg-regular-font-weight);
         line-height: var(--text-lg-regular-line-height);
         margin-bottom: 10px;
+        text-align: center;
         &:last-child{
           margin-bottom: 0;
         }
@@ -4686,4 +4701,31 @@ img {
 }
 .DigitalLibrary .col-md-3 {
   margin-bottom: 24px;
+}
+
+
+.headNews {
+  .titleNews {
+    font-family: var(--display-md-medium-font-family);
+    font-weight: var(--display-md-medium-font-weight);
+    color: var(--themes-text-text-primary);
+    font-size: var(--display-md-medium-font-size);
+    letter-spacing: var(--display-md-medium-letter-spacing);
+    line-height: var(--display-md-medium-line-height);
+    margin-bottom: 32px;
+  }
+}
+
+
+/*
+main sharepoint prop.
+*/
+
+td#MSOTlPn_MainTD {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  top: 200px;
+  right: 20px;
+  z-index: 500;
 }

@@ -1174,6 +1174,7 @@ img {
   left: 0;
   height: 106px;
   background-color: var(--themes-background-background-menu);
+  border-bottom: 1px solid var(--primitives-colors-neutral-300);
 }
 
 .menuWithBanner .navDGA {
@@ -3267,16 +3268,22 @@ img {
       -ms-flex-align: end;
           align-items: end;
   padding-bottom: 40px;
+  padding: 0 4%;
 }
 
 .ElectronicSec .electWrapper .cardElct {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+}
+
+.ElectronicSec .electWrapper .swiper-pagination {
+  bottom: 32px;
 }
 
 .ElectronicSec .right-sec.with-shape.leftWithBgWhite {
-  margin-right: 95px;
+  margin-right: 20px;
   padding-left: 0;
   padding-right: 70px;
+  margin-left: 20%;
   background-color: var(--themes-background-background-white);
 }
 
@@ -3388,7 +3395,7 @@ img {
 
 .newHome .title.yellow {
   color: #dba102;
-  margin-right: 15px;
+  margin-right: 0px;
 }
 
 .newHome .cardNews {
@@ -3671,6 +3678,11 @@ img {
 .aimSec {
   background: #f3f4f6;
   padding: 40px 0;
+}
+
+.partnersSec .col-md-3,
+.aimSec .col-md-3 {
+  width: 20%;
 }
 
 .partnersSec .textAim,
@@ -4067,11 +4079,11 @@ img {
 }
 
 .ElectronicSec .electWrapper .cardElct {
-  min-height: 200px;
+  min-height: 220px;
 }
 
 .whiteBg {
-  background-color: #e5e7eb;
+  background: var(--themes-background-background-neutral-50);
 }
 
 .partnersCards {
@@ -4438,6 +4450,8 @@ img {
 .anotherServ .wrapperCards .cardOther .logo {
   border-radius: var(--radius-radius-lg);
   overflow: hidden;
+  width: 100%;
+  height: 170px;
 }
 
 .anotherServ .wrapperCards .cardOther .logo img {
@@ -5035,7 +5049,7 @@ img {
 .main-with-img .img-box {
   border-radius: 20px;
   overflow: hidden;
-  width: 600px;
+  max-width: 600px;
   height: 500px;
   margin-right: auto;
 }
@@ -5646,7 +5660,8 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 0px;
           flex: 1 0 0;
-  height: 220px;
+  min-height: 220px;
+  height: 100%;
   padding: var(--spacing-global-spacing-xl);
   gap: var(--spacing-card-card-lg-gap);
   border-radius: var(--radius-radius-lg);
@@ -5684,6 +5699,7 @@ img {
   font-weight: var(--text-lg-regular-font-weight);
   line-height: var(--text-lg-regular-line-height);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .twoCards .goalCard .detBox p:last-child {
@@ -5919,6 +5935,28 @@ img {
 
 .DigitalLibrary .col-md-3 {
   margin-bottom: 24px;
+}
+
+.headNews .titleNews {
+  font-family: var(--display-md-medium-font-family);
+  font-weight: var(--display-md-medium-font-weight);
+  color: var(--themes-text-text-primary);
+  font-size: var(--display-md-medium-font-size);
+  letter-spacing: var(--display-md-medium-letter-spacing);
+  line-height: var(--display-md-medium-line-height);
+  margin-bottom: 32px;
+}
+
+/*
+main sharepoint prop.
+*/
+td#MSOTlPn_MainTD {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  top: 200px;
+  right: 20px;
+  z-index: 500;
 }
 
 @media (min-width: 1400px) {
