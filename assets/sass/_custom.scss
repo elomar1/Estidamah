@@ -2686,6 +2686,9 @@ img {
 .aimSec {
   background: #f3f4f6;
   padding: 40px 0;
+  .row{
+    justify-content: center;
+  }
   .col-md-3{
     width: 20%;
   }
@@ -4726,9 +4729,10 @@ main sharepoint prop.
 
 td#MSOTlPn_MainTD {
   position: fixed;
-  width: 500px;
+  width: max-content !important;
   height: 500px;
   top: 200px;
   right: 20px;
   z-index: 500;
+   overflow-y: scroll;
 }

@@ -3680,6 +3680,13 @@ img {
   padding: 40px 0;
 }
 
+.partnersSec .row,
+.aimSec .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .partnersSec .col-md-3,
 .aimSec .col-md-3 {
   width: 20%;
@@ -5955,11 +5962,14 @@ main sharepoint prop.
 */
 td#MSOTlPn_MainTD {
   position: fixed;
-  width: 500px;
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
   height: 500px;
   top: 200px;
   right: 20px;
   z-index: 500;
+  overflow-y: scroll;
 }
 
 @media (min-width: 1400px) {
