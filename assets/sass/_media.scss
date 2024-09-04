@@ -58,12 +58,12 @@
     padding-top: 45px;
   }
   .ElectronicSec .right-sec.with-shape.leftWithBgWhite {
-    margin-right: 55px;
-    padding-right: 50px;
+    margin-#{$start-direction}: 55px;
+    padding-#{$start-direction}: 50px;
   }
   .services-sec .right-sec {
     height: 500px;
-    padding-left: 50px;
+    padding-#{$end-direction}: 50px;
   }
   .services-sec .mySwipeOffer {
     padding: 30px 5px;
@@ -145,12 +145,12 @@
     height: 125px;
   }
   .services-sec .customArrow .swiper-button-next {
-    left: 35px;
-    right: auto;
+    #{$end-direction}: 35px;
+    #{$start-direction}: auto;
   }
   .services-sec .customArrow .swiper-button-prev {
-    right: 30px;
-    left: auto;
+    #{$start-direction}: 30px;
+    #{$end-direction}: auto;
   }
   .newHome .bodyX,
   .newHome .cardNews {
@@ -169,10 +169,10 @@
     font-size: var(--text-xs-regular-font-size);
   }
   .services-sec .right-sec.with-shape {
-    margin-left: 20px;
+    margin-#{$end-direction}: 20px;
   }
   .weAreSec .txt {
-    padding-left: 20px;
+    padding-#{$end-direction}: 20px;
   }
   .weAreSec {
     margin-bottom: 70px;
@@ -187,7 +187,7 @@
   }
 
   .fullWidthMain .rightCardMn {
-    margin-left: 45px !important;
+    margin-#{$end-direction}: 45px !important;
     height: 650px;
   }
   .borderMemeberCards .membCard .presImg {
@@ -414,7 +414,7 @@
     display: none;
   }
   .services-sec .right-sec.with-shape {
-    margin-left: 0;
+    margin-#{$end-direction}: 0;
     padding-top: 45px;
   }
   .weAreSec .imOffer {
@@ -428,26 +428,26 @@
     margin: 0;
   }
   .ElectronicSec .right-sec.with-shape.leftWithBgWhite::after {
-    right: 44%;
+    #{$start-direction}: 44%;
     top: -90px;
     transform: rotate(90deg);
   }
   .mySwipeOffer2,
   .mySwipeOffer {
-    margin-left: 0;
+    margin-#{$end-direction}: 0;
   }
   .ourNumSec .col-md-3,
   .researchSec .cardResearch {
     margin-bottom: 20px;
   }
   .weAreSec .txt {
-    padding-left: 0;
+    padding-#{$end-direction}: 0;
     padding-bottom: 50px;
   }
   .navDGA .row.row-new {
-    justify-content: right;
+    justify-content: #{$start-direction};
     padding-top: 6px;
-    padding-right: 0;
+    padding-#{$start-direction}: 0;
     position: relative;
   }
 
@@ -465,7 +465,7 @@
   }
   nav.navbar.navbarMenu.navbar-expand-lg.navbar-light {
     position: absolute;
-    left: 0;
+    #{$end-direction}: 0;
     top: 17px;
     width: 100%;
     height: auto;
@@ -481,12 +481,12 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    #{$end-direction}: 0;
     width: 100%;
     transform: translateX(100%);
     transition: transform 0.35s;
     padding: 30px 20px;
-    padding-right: 32%;
+    padding-#{$start-direction}: 32%;
     background-color: var(--themes-background-background-SA-flag);
     overflow: hidden;
     overflow-y: auto;
@@ -504,7 +504,7 @@
     border-bottom: 2px solid #e9e9e9;
     border-radius: unset;
     font-weight: bold;
-    padding-right: 0;
+    padding-#{$start-direction}: 0;
     font-size: var(--text-md-medium-font-size);
     color: var(--themes-text-text-oncolor-primary-duplicate);
   }
@@ -525,8 +525,8 @@
   .services-sec .right-sec.with-shape::after {
     transform: rotate(89deg);
     top: 78%;
-    left: 0;
-    right: 44%;
+    #{$end-direction}: 0;
+    #{$start-direction}: 44%;
   }
   .services-sec .services-box {
     padding-#{$start-direction}: 0;
@@ -552,7 +552,7 @@
 
   .awareness-sec .right-sec {
     padding-bottom: 5px;
-    padding-right: 20px !important;
+    padding-#{$start-direction}: 20px !important;
   }
   .awareness-sec .awareness-box .aw-box {
     margin-bottom: var(--primitives-spacing-6-24px-duplicate);
@@ -641,7 +641,7 @@
     line-height: 1.2;
   }
   .fullWidthMain .rightCardMn {
-    margin-left: 45px !important;
+    margin-#{$end-direction}: 45px !important;
     height: auto;
     padding: 24px;
     text-align: center;
@@ -772,19 +772,19 @@
     padding: 45px 0 25px 0;
   }
   .breadcrumb ul.items a:not(.breadCrumbRoot):not(.active) {
-    margin-left: 20px;
+    margin-#{$end-direction}: 20px;
   }
   .breadcrumb ul.items a {
     font-size: var(--text-xs-regular-font-size);
   }
   .breadcrumb ul.items a:not(.breadCrumbRoot):not(.active)::after {
-    left: -18px;
+    #{$end-direction}: -18px;
     top: 1px;
   }
   .customAccordion .accordion-item .accordion-button {
     font-size: var(--text-lg-bold-font-size);
-    text-align: right;
-    padding-left: 50px;
+    text-align: #{$start-direction};
+    padding-#{$end-direction}: 50px;
   }
   .customAccordion .p18 {
     font-size: var(--text-md-medium-font-size);
@@ -890,10 +890,10 @@
     justify-content: center;
     padding-top: 6px;
     position: unset;
-    padding-right: 55px;
+    padding-#{$start-direction}: 55px;
   }
   .Evaluation2 .alertEvaluation .right .btnSmall#feedback_no {
-    right: 80px;
+    #{$start-direction}: 80px;
     min-width: 40px !important;
   }
   .services-details .right-sec .btn-contaimer {
@@ -902,7 +902,7 @@
   .toggleOptions {
     display: block !important;
     position: absolute;
-    right: 26px;
+    #{$start-direction}: 26px;
     top: 35px;
     padding: 4px;
   }
@@ -910,7 +910,7 @@
     position: absolute;
     background: white;
     width: 100%;
-    left: 0;
+    #{$end-direction}: 0;
     top: 100px;
     height: 86px;
     justify-content: center;
@@ -951,23 +951,23 @@
   }
   .services-sec .right-sec.with-shape {
     width: 100%;
-    padding-right: 30px;
-    padding-left: 45px;
+    padding-#{$start-direction}: 30px;
+    padding-#{$end-direction}: 45px;
     padding-bottom: 60px;
   }
   .services-sec .right-sec.with-shape::after {
     top: 75%;
-    right: 38%;
+    #{$start-direction}: 38%;
   }
   .customArrow .swiper-button-next,
   .customArrow .swiper-button-prev {
     background-size: 100px;
   }
   .services-sec .customArrow .swiper-button-next {
-    left: 0;
+    #{$end-direction}: 0;
   }
   .services-sec .customArrow .swiper-button-prev {
-    right: 0;
+    #{$start-direction}: 0;
   }
   .weAreSec {
     margin-bottom: 0;
@@ -989,7 +989,7 @@
     padding: 30px 30px 55px 30px;
   }
   .ElectronicSec .right-sec.with-shape.leftWithBgWhite::after {
-    right: 37%;
+    #{$start-direction}: 37%;
     top: -90px;
   }
   .white-btn a img {
