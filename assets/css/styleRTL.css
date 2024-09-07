@@ -5164,6 +5164,11 @@ img {
   text-align: justify;
 }
 
+.main-with-img .content-box .icon-bx {
+  text-align: center;
+  margin: 20px 0;
+}
+
 .main-with-img .img-box {
   border-radius: 20px;
   overflow: hidden;
@@ -5645,11 +5650,6 @@ img {
   font-weight: var(--text-md-regular-font-weight);
   line-height: var(--text-md-regular-line-height);
   margin-bottom: 0;
-}
-
-.consultations .consultations-card .details-box .icon-bx {
-  text-align: center;
-  margin: 20px 0;
 }
 
 .consultations .consultations-card .days-left {

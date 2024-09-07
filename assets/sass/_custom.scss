@@ -3934,6 +3934,10 @@ img {
           text-align: justify;
         }
       }
+      .icon-bx{
+        text-align: center;
+        margin: 20px 0;
+      }
     }
     .img-box{
       border-radius: 20px;
@@ -4664,10 +4668,6 @@ img {
         line-height: var(--text-md-regular-line-height);
         margin-bottom: 0;
 
-      }
-      .icon-bx{
-        text-align: center;
-        margin: 20px 0;
       }
     }
     .days-left{
