@@ -4844,6 +4844,17 @@ h2.title {
   text-align: center;
 }
 
+
+.tags-sec .tag span {
+  cursor: default;
+  pointer-events: none;
+}
+.tags-sec .tag span a{
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
 // main styles for sharepoint h2 + p
 
 

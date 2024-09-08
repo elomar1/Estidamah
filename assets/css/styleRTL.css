@@ -5831,6 +5831,17 @@ h2.title {
   text-align: center;
 }
 
+.tags-sec .tag span {
+  cursor: default;
+  pointer-events: none;
+}
+
+.tags-sec .tag span a {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
 .ms-rtestate-field h1, h1.ms-rteElement-H1, .ms-rtestate-field h2, h2.ms-rteElement-H2 {
   font-family: var(--display-md-medium-font-family);
   font-weight: var(--display-md-medium-font-weight);
