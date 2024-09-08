@@ -3934,10 +3934,10 @@ img {
           text-align: justify;
         }
       }
-      .icon-bx{
-        text-align: center;
-        margin: 20px 0;
-      }
+    }
+    .icon-bx{
+      text-align: center;
+      margin: 20px 0;
     }
     .img-box{
       border-radius: 20px;
@@ -4832,7 +4832,7 @@ td#MSOTlPn_MainTD {
   justify-content: center;
 }
 
-.programs h2.title {
+h2.title {
   font-family: var(--display-md-medium-font-family);
   font-weight: var(--display-md-medium-font-weight);
   color: #161616;
@@ -4843,7 +4843,6 @@ td#MSOTlPn_MainTD {
   margin-bottom: 40px;
   text-align: center;
 }
-
 
 // main styles for sharepoint h2 + p
 
@@ -4866,3 +4865,4 @@ color: var(--themes-text-text-display);
 font-size: var(--text-lg-regular-font-size);
 line-height: var(--text-lg-regular-line-height);
 }
+

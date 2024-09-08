@@ -5164,7 +5164,7 @@ img {
   text-align: justify;
 }
 
-.main-with-img .content-box .icon-bx {
+.main-with-img .icon-bx {
   text-align: center;
   margin: 20px 0;
 }
@@ -5819,7 +5819,7 @@ td#MSOTlPn_MainTD {
           justify-content: center;
 }
 
-.programs h2.title {
+h2.title {
   font-family: var(--display-md-medium-font-family);
   font-weight: var(--display-md-medium-font-weight);
   color: #161616;
