@@ -1218,7 +1218,7 @@ img {
     font-weight: var(--text-xl-regular-font-weight);
     color: var(--primitives-colors-base-white);
     font-size: var(--text-xl-regular-font-size);
-    text-align: justify;
+    // text-align: justify;
     letter-spacing: var(--text-xl-regular-letter-spacing);
     line-height: var(--text-xl-regular-line-height);
     direction: rtl;
@@ -1250,7 +1250,7 @@ img {
       position: absolute;
       width: 81px;
       height: 195px;
-      top: 215px;
+      top: calc(50% - 97px);
       #{$end-direction}: -45px;
       transform: scale(-1);
       background-image: url(../images/shared/arrow.svg);
@@ -1371,7 +1371,7 @@ img {
 // home awerness
 .awareness-sec {
   background-color: var(--themes-background-background-body);
-  background-image: url(../images/shared/image.png);
+  background-image: url(../images/shared/image222.png);
   background-repeat: no-repeat;
   background-position: #{$start-direction} top;
   padding-top: 150px;
@@ -3208,6 +3208,7 @@ img {
 .fullWidthMain {
   background-color: var(--themes-background-background-neutral-200);
   margin-top: -17px;
+  margin-bottom: 40px;
   .hisWord {
     height: 100%;
     display: flex;
@@ -3311,6 +3312,7 @@ img {
       img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
         transition: .25s;
       }
     }
@@ -3671,7 +3673,7 @@ img {
   align-items: center;
   margin-bottom: 40px;
   .green-btn {
-    padding-top: 20px;
+    padding-top: 5px;
   }
   .inputText {
     margin-#{$end-direction}: 24px;
@@ -3748,6 +3750,7 @@ img {
     .date,
     .p16 {
       margin-bottom: 24px;
+      height: calc(24px* 4);
     } 
     .img {
       height: 250px;
@@ -3801,7 +3804,18 @@ img {
     img {
       width: 100%;
       height: 568px;
-      // object-fit: cover;
+      object-fit: cover;
+    }
+  }
+  .content{
+    div{
+      font-family: var(--text-xl-regular-font-family);
+      font-weight: var(--text-xl-regular-font-weight);
+      font-size: var(--text-xl-regular-font-size);
+      text-align: justify;
+      letter-spacing: var(--text-xl-regular-letter-spacing);
+      line-height: var(--text-xl-regular-line-height);
+      font-style: var(--text-xl-regular-font-style);
     }
   }
 }

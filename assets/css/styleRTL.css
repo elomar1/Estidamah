@@ -1873,7 +1873,6 @@ img {
   font-weight: var(--text-xl-regular-font-weight);
   color: var(--primitives-colors-base-white);
   font-size: var(--text-xl-regular-font-size);
-  text-align: justify;
   letter-spacing: var(--text-xl-regular-letter-spacing);
   line-height: var(--text-xl-regular-line-height);
   direction: rtl;
@@ -1903,7 +1902,7 @@ img {
   position: absolute;
   width: 81px;
   height: 195px;
-  top: 215px;
+  top: calc(50% - 97px);
   left: -45px;
   -webkit-transform: scale(-1);
           transform: scale(-1);
@@ -2038,7 +2037,7 @@ img {
 
 .awareness-sec {
   background-color: var(--themes-background-background-body);
-  background-image: url(../images/shared/image.png);
+  background-image: url(../images/shared/image222.png);
   background-repeat: no-repeat;
   background-position: right top;
   padding-top: 150px;
@@ -4292,6 +4291,7 @@ img {
 .fullWidthMain {
   background-color: var(--themes-background-background-neutral-200);
   margin-top: -17px;
+  margin-bottom: 40px;
 }
 
 .fullWidthMain .hisWord {
@@ -4422,6 +4422,8 @@ img {
 .borderMemeberCards .membCard .presImg img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transition: .25s;
   transition: .25s;
 }
@@ -4852,7 +4854,7 @@ img {
 }
 
 .filtering .green-btn {
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 .filtering .inputText {
@@ -4953,6 +4955,7 @@ img {
 .newsPage .WSCard .date,
 .newsPage .WSCard .p16 {
   margin-bottom: 24px;
+  height: calc(24px* 4);
 }
 
 .mediaCenter .WSCard .img,
@@ -5028,6 +5031,18 @@ img {
 .newsDetails .imgNews img {
   width: 100%;
   height: 568px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.newsDetails .content div {
+  font-family: var(--text-xl-regular-font-family);
+  font-weight: var(--text-xl-regular-font-weight);
+  font-size: var(--text-xl-regular-font-size);
+  text-align: justify;
+  letter-spacing: var(--text-xl-regular-letter-spacing);
+  line-height: var(--text-xl-regular-line-height);
+  font-style: var(--text-xl-regular-font-style);
 }
 
 .eventsPage .WSCard .tite {
