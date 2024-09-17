@@ -17,6 +17,54 @@ $(document).ready(function () {
   });
   
 
+  $("#CopyContent").click(function (e) {
+    e.preventDefault();
+    //console.log("5555555")
+   // window.navigator.clipboard.writeText(window.location.href);
+   
+   
+	    copyToClipboard(window.location.href);
+	    console.log('Text copied to the clipboard!');
+	    $(this).addClass('clicked');
+	   		
+	
+	setTimeout(function(){
+        $('#CopyContent').removeClass("clicked");
+        console.log("5555555")
+    }, 5000);
+    
+    
+	  });
+
+
+
+
+    
+async function copyToClipboard(textToCopy) {
+  // Navigator clipboard api needs a secure context (https)
+  if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(textToCopy);
+  } else {
+      // Use the 'out of viewport hidden text area' trick
+      const textArea = document.createElement("textarea");
+      textArea.value = textToCopy;
+          
+      // Move textarea out of the viewport so it's not visible
+      textArea.style.position = "absolute";
+      textArea.style.left = "-999999px";
+          
+      document.body.prepend(textArea);
+      textArea.select();
+
+      try {
+          document.execCommand('copy');
+      } catch (error) {
+          console.error(error);
+      } finally {
+          textArea.remove();
+      }
+  }
+}
 
 
 

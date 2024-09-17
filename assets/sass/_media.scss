@@ -47,6 +47,10 @@
   }
 }
 
+
+// start max media
+
+
 @media (max-width: 1600px) {
   .services-sec {
     margin: 120px 0;
@@ -70,6 +74,9 @@
   }
   .services-sec .boxSer .boxImg img {
     height: 345px;
+  }
+  .consultations .consultations-card .eventDates .date-here{
+    font-size: var(--text-sm-regular-font-size);
   }
 }
 @media (max-width: 1400px) {
@@ -200,6 +207,10 @@
     width: 33.333%;
     height: auto;
   }
+
+  .CardWhitOrGreen.with-shape, .services-sec .with-shape.right-sec, .fullWidthMain .with-shape.rightCardMn{
+    height: 100%;
+  }
   /* end 1400 */
 }
 @media (max-width: 1700px) {
@@ -298,6 +309,13 @@
   .services-list .serv-list-card .btn-contaimer {
     flex-direction: column;
   }
+  .servCardIn .text .p18{
+    font-weight: var(--text-md-regular-font-weight);
+    font-size: var(--text-md-regular-font-size);
+    letter-spacing: var(--text-md-regular-letter-spacing);
+    line-height: var(--text-md-regular-line-height);
+  }
+
 }
 @media (max-width: 1199.98px) {
   .menuWithBanner .navbarMenu .navbar-nav .nav-link {
@@ -333,7 +351,7 @@
   .imageGallery .txt .tite,
   .WSCard .txt .tite {
     font-size: var(--text-lg-bold-font-size);
-    line-height: 1.2;
+    line-height: 1.3;
   }
   .workshop .txtRight .supTitle {
     font-size: var(--display-xs-semibold-font-size);
@@ -362,6 +380,36 @@
   .EservicesClass .col-md-4,
   .servicesInner .col-md-4 {
     width: 50%;
+  }
+
+
+  .fullWidthMain .rightCardMn .imgPres {
+    width: 195px;
+    height: 195px;
+  }
+
+  .innerBanner{
+    padding: 12px 0;
+    min-height: 150px;
+    height: auto;
+  }
+  .innerBanner .titleBnr{
+    font-size: var(--display-xs-medium-font-size);
+    line-height: var(--display-xs-medium-line-height);
+  }
+  .main-with-img .content-box p{
+    font-size: var(--text-md-regular-font-size);
+    line-height: var(--text-md-regular-line-height);
+
+  }
+  .cardOtherCol4 .logo{
+    height: 200px;
+  }
+  .cardOtherCol4 .txt{
+    height: calc(100% - 200px);
+  }
+  .progSearc .cardResearch, .researchSec .cardResearch{
+    height: 230px;
   }
   /* end 1200 */
 }
@@ -665,6 +713,144 @@
   .anotherServ .wrapperCards .cardOther {
     width: 48%;
   }
+
+
+
+  .CardWhitOrGreen.with-shape::before, .services-sec .with-shape.right-sec::before, .fullWidthMain .with-shape.rightCardMn::before{
+    display: none;
+  }
+  .CardWhitOrGreen.with-shape, .services-sec .with-shape.right-sec, .fullWidthMain .with-shape.rightCardMn, .services-sec .with-shape.right-sec, .fullWidthMain .with-shape.rightCardMn{
+    margin-#{$end-direction}: 0 !important;
+    margin-bottom: 24px;
+    padding: 24px !important;
+  }
+  .CardWhitOrGreen.with-shape::after, 
+  .services-sec .with-shape.right-sec::after ,
+  .fullWidthMain .with-shape.rightCardMn::after
+  {
+    transform: rotate(-90deg) translateY(25%) !important;
+    top: 75% !important;
+    #{$start-direction}: 50% !important;
+  }
+  .fullWidthMain.workshop .with-shape.rightCardMn::after{
+    transform: rotate(-90deg) translateY(25%) !important;
+    top: 60% !important;
+    #{$start-direction}: 50% !important;
+  }
+  .map-sec .content-box .contact-us{
+    width: 325px;
+  }
+  .map-sec .content-box .contact-us h4{
+    font-size: var(--display-xs-medium-font-size);
+    line-height: var(--display-xs-medium-line-height);
+  }
+  .map-sec .content-box .contact-us .details ul{
+    gap: var(--primitives-spacing-2-8px);
+  }
+
+  .digital-details .img-box{
+    margin: 0 auto;
+    margin-top: 24px;
+    height: auto;
+  }
+  .main-with-img .content-box p{
+    font-size: var(--text-sm-regular-font-size);
+    line-height: var(--text-sm-regular-line-height);
+  }
+  .imageGallery .txt .tite, .WSCard .txt .tite{
+    height: auto;
+  }
+
+  .main-with-img .img-box{
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: max-content;
+    height: auto;
+  }
+  .main-with-img .content-box h3{
+    font-size: var(--display-xs-semibold-font-size);
+    line-height: var(--display-xs-semibold-line-height);
+    margin-bottom: var(--primitives-spacing-4-16px);
+  }
+
+  .mediaCenter .WSCard .p16, .eventsPage .WSCard .p16, .DigitalLibrary .WSCard .p16, .newsPage .WSCard .p16{
+    height: auto;
+  }
+
+  .newsDetails .headNews .titleNews{
+    font-size: var(--display-xs-semibold-font-size);
+    line-height: var(--display-xs-semibold-line-height);
+    margin-bottom: var(--primitives-spacing-4-16px);
+  }
+  .newsDetails .imgNews img{
+    height: auto;
+  }
+   .p20{
+    font-size: var(--text-md-medium-font-size);
+    line-height: var(--text-md-medium-line-height);
+  }
+
+  .partnersSec .textAim .title, .aimSec .textAim .title{
+    font-size: var(--display-xs-semibold-font-size);
+    line-height: var(--display-xs-semibold-line-height);
+    margin-bottom: var(--primitives-spacing-4-16px);
+  }
+
+  .progSearc .title, .researchSec .title{
+    font-size: var(--display-xs-semibold-font-size);
+    line-height: var(--display-xs-semibold-line-height);
+    margin-bottom: var(--primitives-spacing-4-16px);
+    padding-bottom: 20px;
+  }
+
+  .progSearc .cardResearch, .researchSec .cardResearch{
+    margin-bottom: 24px;
+  }
+  .tags-sec{
+    gap: 12px;
+  }
+  .tags-sec .tag span{
+    font-size: var(--text-sm-medium-font-size);
+    line-height: var(--text-sm-medium-line-height);
+  }
+  .experiment h3{
+    font-size: var(--display-xs-medium-font-size);
+    line-height: var(--display-xs-medium-line-height);
+  }
+  .experiment ul li{
+    font-size: var(--text-md-medium-font-size);
+    line-height: var(--text-md-medium-line-height);
+  }
+  .twoCards .col-lg-6{
+    margin-bottom: 12px;
+  }
+  .twoCards .goalCard .detBox p,
+  .twoCards .goalCard .detBox ul li,
+  .main-with-img .content-box ul li{
+    font-size: var(--text-sm-medium-font-size);
+    line-height: var(--text-sm-medium-line-height);
+  }
+  .anotherServ h2.title{
+    font-size: var(--display-xs-medium-font-size);
+    line-height: var(--display-xs-medium-line-height);
+    margin-bottom: 24px;
+  }
+  .services-details .gray-bc{
+    display: none;
+  }
+  .services-details .right-sec .mainTitle,
+  .services-details .right-sec .mainTitle span{
+    font-size: var(--display-xs-medium-font-size);
+    line-height: var(--display-xs-medium-line-height);
+    margin-bottom: 24px;
+  }
+  .services-details .right-sec p{
+    font-size: var(--text-md-medium-font-size);
+    line-height: var(--text-md-medium-line-height);
+  }
+  .services-details .right-sec{
+    padding: 40px 0;
+  }
   /* end 992 */
 }
 
@@ -804,6 +990,28 @@
   }
   .green-btn input[type="submit"], .green-btn a {
     height: 35px;
+  }
+
+  .rateContet .bgRate {
+    flex-wrap: wrap;
+  }
+
+  .map-sec .mapFrom{
+    height: 400px;
+  }
+  .map-sec .content-box .contact-us{
+    position: relative;
+    width: 100%;
+    right: 0;
+    top: 0;
+    margin-top: 24px;
+  }
+  .projects .cardOtherCol4 .txt .p16, .programs .cardOtherCol4 .txt .p16{
+    height: auto;
+  }
+  .addRow{
+    padding: 0;
+    margin-bottom: 24px;
   }
   /* end 767 */
 }
@@ -1019,5 +1227,24 @@
   }
   .partnersCards {
     padding: 32px 0 16px 0;
+  }
+
+
+  .rate:not(:checked) > label{
+    width: 23px;
+    height: 25px;
+    padding-right: 15px;
+  }
+  .rateContet .bgRate .rateRight .pRate {
+    margin-left: 12px;
+  }
+  .mediaCenter .WSCard .img, .eventsPage .WSCard .img, .DigitalLibrary .WSCard .img, .newsPage .WSCard .img{
+    height: 200px;
+  }
+  .eventsPage .txt {
+    height: calc(100% - 225px);
+  }
+  .newsPage .WSCard .txt{
+    height: calc(100% - 225px);
   }
 }
