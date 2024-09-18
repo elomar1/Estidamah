@@ -877,6 +877,7 @@ img {
             opacity: .5;
             pointer-events: none;
             cursor: not-allowed;
+            color: var(--primitives-colors-primary-SA-flag-600-primary-duplicate);
           }
         }
       }
@@ -1391,8 +1392,8 @@ img {
   background-image: url(../images/shared/image222.png);
   background-repeat: no-repeat;
   background-position: #{$start-direction} top;
-  padding-top: 150px;
-  height: 795px;
+  // padding-top: 150px;
+  height: 600px;
   @media (min-width: 1200px) {
     .container {
       max-width: 1895px;
@@ -1525,6 +1526,14 @@ img {
             line-height: var(--text-sm-regular-underlined-line-height);
             text-decoration: underline;
             color: var(--primitives-colors-alpha-alpha-white-80);
+          }
+        }
+
+        &:last-child{
+          a{
+            span{
+              line-height: 1.5;
+            }
           }
         }
       }
@@ -2672,6 +2681,7 @@ img {
       position: relative;
       font-family: var(--display-lg-medium-font-family);
       font-style: var(--display-lg-medium-font-style);
+      direction: ltr;
     }
   }
 }

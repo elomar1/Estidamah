@@ -1485,6 +1485,7 @@ img {
   opacity: .5;
   pointer-events: none;
   cursor: not-allowed;
+  color: var(--primitives-colors-primary-SA-flag-600-primary-duplicate);
 }
 
 .navActions li.searchCustom {
@@ -2055,8 +2056,7 @@ img {
   background-image: url(../images/shared/image222.png);
   background-repeat: no-repeat;
   background-position: left top;
-  padding-top: 150px;
-  height: 795px;
+  height: 600px;
 }
 
 @media (min-width: 1200px) {
@@ -2204,6 +2204,10 @@ img {
   line-height: var(--text-sm-regular-underlined-line-height);
   text-decoration: underline;
   color: var(--primitives-colors-alpha-alpha-white-80);
+}
+
+.footerDGA .FooterLinks ul li:last-child a span {
+  line-height: 1.5;
 }
 
 .footerDGA .FooterLinks .social {
@@ -3649,6 +3653,7 @@ img {
   position: relative;
   font-family: var(--display-lg-medium-font-family);
   font-style: var(--display-lg-medium-font-style);
+  direction: ltr;
 }
 
 .clearClass {
@@ -6163,7 +6168,14 @@ div#divMainForm .col-md-4 .green-btn {
   .awareness-sec .right-sec .mainTitle span,
   .services-sec .right-sec .mainTitle span,
   .bannerMenu .contentBanner .BNRtxt h1 {
-    font-size: var(--display-md-medium-font-size);
+    font-size: var(--display-sm-medium-font-size);
+    line-height: var(--display-sm-medium-line-height);
+  }
+  .awareness-sec .right-sec .mainTitle,
+  .progSearc .title, .researchSec .title,
+  .ourNumSec .numText .titleNum {
+    font-size: var(--display-sm-medium-font-size);
+    line-height: var(--display-sm-medium-line-height);
   }
   /* font 24*/
   .newHome .titleX,
@@ -6312,6 +6324,13 @@ div#divMainForm .col-md-4 .green-btn {
   }
   .CardWhitOrGreen.with-shape, .services-sec .with-shape.right-sec, .fullWidthMain .with-shape.rightCardMn, .services-sec .with-shape.right-sec, .fullWidthMain .with-shape.rightCardMn {
     height: 100%;
+  }
+  .awareness-sec {
+    height: 550px;
+  }
+  .ElectronicSec .right-sec.with-shape.leftWithBgWhite {
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
   /* end 1400 */
 }
@@ -6509,6 +6528,12 @@ div#divMainForm .col-md-4 .green-btn {
   .progSearc .cardResearch,
   .researchSec .cardResearch {
     height: 230px;
+  }
+  .services-sec .right-sec {
+    padding-top: 100px;
+  }
+  .ElectronicSec .right-sec.with-shape.leftWithBgWhite {
+    margin-right: 5%;
   }
   /* end 1200 */
 }
@@ -6975,6 +7000,19 @@ div#divMainForm .col-md-4 .green-btn {
   .services-details .right-sec {
     padding: 40px 0;
   }
+  section.services-sec.ElectronicSec .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .ElectronicSec .right-sec.with-shape.leftWithBgWhite {
+    margin-bottom: 40px;
+  }
+  .ElectronicSec .right-sec.with-shape.leftWithBgWhite::after,
+  .services-sec .right-sec.with-shape::after {
+    display: none;
+  }
   /* end 992 */
 }
 
@@ -6987,6 +7025,7 @@ div#divMainForm .col-md-4 .green-btn {
   }
   .bannerMenu .contentBanner .BNRtxt {
     max-width: 85%;
+    width: 85%;
   }
   .bannerMenu .contentBanner .BNRtxt p {
     font-weight: var(--text-md-regular-font-weight);
@@ -7142,16 +7181,24 @@ div#divMainForm .col-md-4 .green-btn {
 
 @media (max-width: 574.98px) {
   /* font 24 */
+  .bannerMenu .contentBanner .BNRtxt h1 {
+    font-size: var(--display-xs-semibold-font-size);
+    line-height: var(--display-xs-semibold-line-height);
+    margin-bottom: 12px;
+  }
   .weAreSec .txt .font48,
   .ourNumSec .boxNum .counter,
   .awareness-sec .right-sec .mainTitle span,
-  .services-sec .right-sec .mainTitle span,
-  .bannerMenu .contentBanner .BNRtxt h1 {
-    /* font-size: var(--display-xs-semibold-font-size); */
+  .services-sec .right-sec .mainTitle span {
+    font-size: var(--display-xs-semibold-font-size);
+    line-height: var(--display-xs-semibold-line-height);
+    margin-bottom: 12px;
+    margin-top: 0;
   }
   .newsDetails .headNews .titleNews,
   .innerBanner .titleBnr,
-  .fullWidthMain .rightCardMn .txtPrs .wordPres {
+  .fullWidthMain .rightCardMn .txtPrs .wordPres,
+  .ourNumSec .numText .titleNum {
     font-size: var(--display-xs-semibold-font-size);
     line-height: var(--display-xs-medium-line-height);
   }
@@ -7203,6 +7250,9 @@ div#divMainForm .col-md-4 .green-btn {
   .footerDGA .btm-footer .footer-last .dir-links {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .weAreSec .txt .p20 {
+    margin-top: 0;
   }
   .newsDetails .headNews .date,
   .newsDetails .headNews .titleNews {
@@ -7377,6 +7427,20 @@ div#divMainForm .col-md-4 .green-btn {
   }
   .newsPage .WSCard .txt {
     height: calc(100% - 225px);
+  }
+  .ourNumSec .numText .p20 {
+    font-size: var(--text-md-medium-font-size);
+  }
+  .awareness-sec .right-sec p,
+  .weAreSec .txt .p20 {
+    width: 100%;
+    text-align: left;
+  }
+  .newHome .cardNews .newImg {
+    height: 300px;
+  }
+  .newHome .cardNews .newImg img {
+    height: 280px;
   }
 }
 /*# sourceMappingURL=styleLTR.css.map */
