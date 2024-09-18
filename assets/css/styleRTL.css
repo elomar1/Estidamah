@@ -6092,6 +6092,18 @@ div#divMainForm .col-md-4 .green-btn {
   display: flex;
 }
 
+.ms-webpart-chrome-vertical {
+  display: block;
+}
+
+div.ms-webpart-cell-vertical-inline-table {
+  display: block;
+}
+
+.ms-webpart-zone {
+  display: block;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1360px;
