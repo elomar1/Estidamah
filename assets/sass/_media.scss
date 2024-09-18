@@ -673,7 +673,7 @@
     margin-top: 0;
   }
   .bannerMenu .contentBanner {
-    height: calc(100vh - 160px);
+    height: calc(70vh - 160px);
     position: relative;
     display: flex;
     align-items: center;
@@ -755,6 +755,7 @@
     transform: rotate(-90deg) translateY(25%) !important;
     top: 75% !important;
     #{$start-direction}: 50% !important;
+    display: none;
   }
   .fullWidthMain.workshop .with-shape.rightCardMn::after{
     transform: rotate(-90deg) translateY(25%) !important;
@@ -1050,6 +1051,13 @@
   .addRow{
     padding: 0;
     margin-bottom: 24px;
+  }
+  .breadcrumb {
+    min-height: 70px;
+    height: auto;
+  }
+  .breadcrumb .items{
+    flex-wrap: wrap;
   }
   /* end 767 */
 }

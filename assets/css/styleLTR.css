@@ -1749,12 +1749,19 @@ img {
   position: absolute;
   overflow: hidden;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   z-index: -1;
 }
 
 .bannerMenu .contentBanner .bg-video-wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bannerMenu .contentBanner .bg-video-wrap video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -6790,7 +6797,7 @@ div#divMainForm .col-md-4 .green-btn {
     margin-top: 0;
   }
   .bannerMenu .contentBanner {
-    height: calc(100vh - 160px);
+    height: calc(70vh - 160px);
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6877,6 +6884,7 @@ div#divMainForm .col-md-4 .green-btn {
             transform: rotate(-90deg) translateY(25%) !important;
     top: 75% !important;
     left: 50% !important;
+    display: none;
   }
   .fullWidthMain.workshop .with-shape.rightCardMn::after {
     -webkit-transform: rotate(-90deg) translateY(25%) !important;
@@ -7175,6 +7183,14 @@ div#divMainForm .col-md-4 .green-btn {
   .addRow {
     padding: 0;
     margin-bottom: 24px;
+  }
+  .breadcrumb {
+    min-height: 70px;
+    height: auto;
+  }
+  .breadcrumb .items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   /* end 767 */
 }
