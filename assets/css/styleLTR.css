@@ -7166,14 +7166,15 @@ div.ms-webpart-cell-vertical-inline-table {
     padding: 45px 0 25px 0;
   }
   .breadcrumb ul.items a:not(.breadCrumbRoot):not(.active) {
-    margin-right: 20px;
+    margin-right: 5px;
+    padding-right: 15px;
   }
   .breadcrumb ul.items a {
     font-size: var(--text-xs-regular-font-size);
   }
   .breadcrumb ul.items a:not(.breadCrumbRoot):not(.active)::after {
-    right: -18px;
-    top: 1px;
+    right: -5px;
+    top: 4px;
   }
   .customAccordion .accordion-item .accordion-button {
     font-size: var(--text-lg-bold-font-size);
@@ -7225,6 +7226,7 @@ div.ms-webpart-cell-vertical-inline-table {
   .breadcrumb {
     min-height: 70px;
     height: auto;
+    padding-bottom: 15px;
   }
   .breadcrumb .items {
     -ms-flex-wrap: wrap;
