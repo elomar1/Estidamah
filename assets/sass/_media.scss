@@ -415,7 +415,7 @@
     line-height: var(--display-xs-medium-line-height);
   }
   .main-with-img .content-box p{
-    font-size: var(--text-md-regular-font-size);
+    font-size: var(--text-md-regular-font-size) !important;
     line-height: var(--text-md-regular-line-height);
 
   }
@@ -779,7 +779,7 @@
     height: auto;
   }
   .main-with-img .content-box p{
-    font-size: var(--text-sm-regular-font-size);
+    font-size: var(--text-sm-regular-font-size) !important;
     line-height: var(--text-sm-regular-line-height);
   }
   .imageGallery .txt .tite, .WSCard .txt .tite{
@@ -802,7 +802,7 @@
     height: auto;
   }
 
-  .newsDetails .headNews .titleNews{
+   .headNews .titleNews{
     font-size: var(--display-xs-semibold-font-size);
     line-height: var(--display-xs-semibold-line-height);
     margin-bottom: var(--primitives-spacing-4-16px);
@@ -852,7 +852,7 @@
   .twoCards .goalCard .detBox p,
   .twoCards .goalCard .detBox ul li,
   .main-with-img .content-box ul li{
-    font-size: var(--text-sm-medium-font-size);
+    font-size: var(--text-sm-medium-font-size) !important;
     line-height: var(--text-sm-medium-line-height);
   }
   .anotherServ h2.title{
@@ -887,7 +887,12 @@
   .services-sec .right-sec.with-shape::after{
     display: none;
   }
-
+  .digital-details .content-box .details-box{
+    margin-bottom: 0;
+  }
+  .digital-details .content-box {
+    margin-bottom: var(--primitives-spacing-6-24px-duplicate);
+  }
 
   /* end 992 */
 }
@@ -1059,6 +1064,10 @@
   .breadcrumb .items{
     flex-wrap: wrap;
   }
+
+  .f-button {
+    min-width: auto;
+  }
   /* end 767 */
 }
 
@@ -1079,7 +1088,7 @@
     margin-bottom: 12px;
     margin-top: 0;
   }
-  .newsDetails .headNews .titleNews,
+  .headNews .titleNews,
   .innerBanner .titleBnr,
   .fullWidthMain .rightCardMn .txtPrs .wordPres ,
   .ourNumSec .numText .titleNum {
@@ -1137,8 +1146,8 @@
   .weAreSec .txt .p20{
     margin-top: 0;
   }
-  .newsDetails .headNews .date,
-  .newsDetails .headNews .titleNews {
+  .headNews .date,
+  .headNews .titleNews {
     margin-bottom: 16px;
   }
   .main-search-serv .srch input {

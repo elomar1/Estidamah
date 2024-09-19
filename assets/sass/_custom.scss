@@ -3101,8 +3101,9 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: var(--spacing-link-link-sm-gap);
+  flex-wrap: wrap;
 }
 
 .breadcrumb ul.items a:not(.breadCrumbRoot):not(.active) {
@@ -4014,12 +4015,22 @@ img {
         margin-bottom: var(--primitives-spacing-8-32px);
       }
       p{
+        font-family: var(--display-lg-semibold-font-family) !important;
         color: var(--themes-text-text-default);
-        font-size: var(--text-xl-regular-font-size);
+        font-size: var(--text-xl-regular-font-size) !important;
         font-weight: var(--text-xl-regular-font-weight);
         line-height: var(--text-xl-regular-line-height);
         letter-spacing: var(--text-xl-regular-letter-spacing);
         text-align: justify;
+        span{
+          font-family: var(--display-lg-semibold-font-family) !important;
+          color: var(--themes-text-text-default);
+          font-size: var(--text-xl-regular-font-size) !important;
+          font-weight: var(--text-xl-regular-font-weight);
+          line-height: var(--text-xl-regular-line-height);
+          letter-spacing: var(--text-xl-regular-letter-spacing);
+          text-align: justify;
+        }
         + p{
           margin-top: var(--primitives-spacing-4-16px);
         }
@@ -5093,6 +5104,7 @@ div#ribbonBox img {
 
 div#divMainForm .col-md-4 .green-btn {
   padding-top: 21px;
+  margin-bottom: 21px;
 }
 
 
@@ -5115,4 +5127,9 @@ div.ms-webpart-cell-vertical-inline-table {
 
 .ms-webpart-zone {
   display: block;
+}
+.textAccordion em,
+.textAccordion div,
+.textAccordion p {
+  line-height: 1.5;
 }

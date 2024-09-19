@@ -4158,10 +4158,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: var(--spacing-link-link-sm-gap);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .breadcrumb ul.items a:not(.breadCrumbRoot):not(.active) {
@@ -5272,8 +5274,19 @@ img {
 }
 
 .main-with-img .content-box p {
+  font-family: var(--display-lg-semibold-font-family) !important;
   color: var(--themes-text-text-default);
-  font-size: var(--text-xl-regular-font-size);
+  font-size: var(--text-xl-regular-font-size) !important;
+  font-weight: var(--text-xl-regular-font-weight);
+  line-height: var(--text-xl-regular-line-height);
+  letter-spacing: var(--text-xl-regular-letter-spacing);
+  text-align: justify;
+}
+
+.main-with-img .content-box p span {
+  font-family: var(--display-lg-semibold-font-family) !important;
+  color: var(--themes-text-text-default);
+  font-size: var(--text-xl-regular-font-size) !important;
   font-weight: var(--text-xl-regular-font-weight);
   line-height: var(--text-xl-regular-line-height);
   letter-spacing: var(--text-xl-regular-letter-spacing);
@@ -6084,6 +6097,7 @@ div#ribbonBox img {
 
 div#divMainForm .col-md-4 .green-btn {
   padding-top: 21px;
+  margin-bottom: 21px;
 }
 
 .tags-sec .ms-formfieldcontainer {
@@ -6102,6 +6116,12 @@ div.ms-webpart-cell-vertical-inline-table {
 
 .ms-webpart-zone {
   display: block;
+}
+
+.textAccordion em,
+.textAccordion div,
+.textAccordion p {
+  line-height: 1.5;
 }
 
 @media (min-width: 1400px) {
@@ -6535,7 +6555,7 @@ div.ms-webpart-cell-vertical-inline-table {
     line-height: var(--display-xs-medium-line-height);
   }
   .main-with-img .content-box p {
-    font-size: var(--text-md-regular-font-size);
+    font-size: var(--text-md-regular-font-size) !important;
     line-height: var(--text-md-regular-line-height);
   }
   .cardOtherCol4 .logo {
@@ -6920,7 +6940,7 @@ div.ms-webpart-cell-vertical-inline-table {
     height: auto;
   }
   .main-with-img .content-box p {
-    font-size: var(--text-sm-regular-font-size);
+    font-size: var(--text-sm-regular-font-size) !important;
     line-height: var(--text-sm-regular-line-height);
   }
   .imageGallery .txt .tite,
@@ -6946,7 +6966,7 @@ div.ms-webpart-cell-vertical-inline-table {
   .newsPage .WSCard .p16 {
     height: auto;
   }
-  .newsDetails .headNews .titleNews {
+  .headNews .titleNews {
     font-size: var(--display-xs-semibold-font-size);
     line-height: var(--display-xs-semibold-line-height);
     margin-bottom: var(--primitives-spacing-4-16px);
@@ -6996,7 +7016,7 @@ div.ms-webpart-cell-vertical-inline-table {
   .twoCards .goalCard .detBox p,
   .twoCards .goalCard .detBox ul li,
   .main-with-img .content-box ul li {
-    font-size: var(--text-sm-medium-font-size);
+    font-size: var(--text-sm-medium-font-size) !important;
     line-height: var(--text-sm-medium-line-height);
   }
   .anotherServ h2.title {
@@ -7032,6 +7052,12 @@ div.ms-webpart-cell-vertical-inline-table {
   .ElectronicSec .right-sec.with-shape.leftWithBgWhite::after,
   .services-sec .right-sec.with-shape::after {
     display: none;
+  }
+  .digital-details .content-box .details-box {
+    margin-bottom: 0;
+  }
+  .digital-details .content-box {
+    margin-bottom: var(--primitives-spacing-6-24px-duplicate);
   }
   /* end 992 */
 }
@@ -7204,6 +7230,9 @@ div.ms-webpart-cell-vertical-inline-table {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .f-button {
+    min-width: auto;
+  }
   /* end 767 */
 }
 
@@ -7223,7 +7252,7 @@ div.ms-webpart-cell-vertical-inline-table {
     margin-bottom: 12px;
     margin-top: 0;
   }
-  .newsDetails .headNews .titleNews,
+  .headNews .titleNews,
   .innerBanner .titleBnr,
   .fullWidthMain .rightCardMn .txtPrs .wordPres,
   .ourNumSec .numText .titleNum {
@@ -7282,8 +7311,8 @@ div.ms-webpart-cell-vertical-inline-table {
   .weAreSec .txt .p20 {
     margin-top: 0;
   }
-  .newsDetails .headNews .date,
-  .newsDetails .headNews .titleNews {
+  .headNews .date,
+  .headNews .titleNews {
     margin-bottom: 16px;
   }
   .main-search-serv .srch input {
