@@ -4976,6 +4976,10 @@ img {
   -webkit-line-clamp: 3;
 }
 
+.programs .cardOtherCol4 {
+  height: calc(100% - 20px);
+}
+
 .progSearc {
   background-color: #B8EACB;
 }
@@ -6122,6 +6126,56 @@ div.ms-webpart-cell-vertical-inline-table {
 .textAccordion div,
 .textAccordion p {
   line-height: 1.5;
+}
+
+html[lang="en-US"] .customAccordion .accordion-item .accordion-button,
+html[lang="en-US"] .fullWidthMain .rightCardMn .txtPrs .p24 {
+  direction: ltr;
+}
+
+html[lang="en-US"] .rate {
+  direction: rtl;
+}
+
+html[lang="en-US"] .breadcrumb ul.items a:not(.breadCrumbRoot):not(.active)::after,
+html[lang="en-US"] .pagination .page-link.prev, html[lang="en-US"] .pagination .page-link.next, html[lang="en-US"] .pagination .prePagi.prev, html[lang="en-US"] .pagination .prePagi.next,
+html[lang="en-US"] .green-btn input[type="submit"] img, html[lang="en-US"] .green-btn a img,
+html[lang="en-US"] .btnExtends img,
+html[lang="en-US"] .white-btn a img,
+.white-btn html[lang="en-US"] a img,
+html[lang="en-US"] .prevBtn img,
+html[lang="en-US"] .nextBtn img, html[lang="en-US"] .white-btn a img, html[lang="en-US"] .prevBtn img, html[lang="en-US"] .nextBtn img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en-US"] .services-sec .with-shape.right-sec::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+html[lang="en-US"] .fullWidthMain .rightCardMn::after,
+html[lang="en-US"] .services-details .gray-bc::after {
+  -webkit-transform: translateY(-50%) scaleX(-1) !important;
+          transform: translateY(-50%) scaleX(-1) !important;
+}
+
+html[lang="en-US"] .inputText select {
+  background-position: 98% 15px;
+}
+
+html[lang="en-US"] .services-sec .customArrow .swiper-button-next {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en-US"] .services-sec .customArrow .swiper-button-prev {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+html[lang="en-US"] .DGA-tabs1 .nav-item .nav-link.active {
+  direction: ltr;
 }
 
 @media (min-width: 1400px) {

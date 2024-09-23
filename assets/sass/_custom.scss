@@ -3763,7 +3763,9 @@ img {
     -webkit-line-clamp: 3;
   }
 }
-
+.programs .cardOtherCol4{
+  height: calc(100% - 20px);
+}
 
 .progSearc {
   background-color: #B8EACB;
@@ -5132,4 +5134,49 @@ div.ms-webpart-cell-vertical-inline-table {
 .textAccordion div,
 .textAccordion p {
   line-height: 1.5;
+}
+
+
+
+
+
+
+// English version
+
+html[lang="en-US"]{
+  .customAccordion .accordion-item .accordion-button,
+  .fullWidthMain .rightCardMn .txtPrs .p24{
+    direction: ltr;
+  }
+  .rate {
+    direction: rtl;
+  }
+  .breadcrumb ul.items a:not(.breadCrumbRoot):not(.active)::after ,
+  // .pagination .page-link.prev, .pagination .page-link.next img, .pagination .prePagi.prev, .pagination .prePagi.next img,
+  .pagination .page-link.prev, .pagination .page-link.next, .pagination .prePagi.prev, .pagination .prePagi.next,
+  .green-btn input[type="submit"] img, .green-btn a img,
+  .btnExtends img, .white-btn a img, .prevBtn img, .nextBtn img
+  {
+    transform: scaleX(-1);
+  }
+  .services-sec .with-shape.right-sec::after{
+    transform: scaleX(1);
+  }
+  .fullWidthMain .rightCardMn::after,
+  .services-details .gray-bc::after{
+    transform: translateY(-50%) scaleX(-1) !important;
+  }
+
+  .inputText select{
+    background-position: 98% 15px;
+  }
+  .services-sec .customArrow .swiper-button-next{
+    transform: scaleX(-1);
+  }
+  .services-sec .customArrow .swiper-button-prev{
+    transform: scaleX(1);
+  }
+  .DGA-tabs1 .nav-item .nav-link.active{
+    direction: ltr;
+  }
 }
