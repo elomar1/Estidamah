@@ -656,7 +656,24 @@ img {
             line-height: var(--text-lg-bold-line-height);
             color: var(--themes-text-text-oncolor-primary);
           }
+          ::-webkit-scrollbar {
+            width: 5px;
+          }
+          
+          /* Track */
+          ::-webkit-scrollbar-track {
+            background: #888;
+          }
+          
+          /* Handle */
+          ::-webkit-scrollbar-thumb {
+            background: #c7c7c7;
+          }
           ul {
+            overflow-y: scroll;
+            max-height: 500px;
+            
+
             li {
               min-height: 40px;
               border-radius: var(--radius-radius-md);
@@ -675,7 +692,7 @@ img {
                 color: var(--themes-text-text-oncolor-primary);
                 background-color: transparent;
                 padding-#{$start-direction}: 40px;
-                // white-space: inherit;
+                white-space: normal;
                 &::before {
                   content: "";
                   position: absolute;
@@ -1916,7 +1933,10 @@ img {
 
 // Breadcrumb
 .breadcrumb {
-  height: 70px;
+  // height: 70px;
+  min-height: 70px;
+  height: auto;
+  padding-bottom: 15px;
   background-color: var(--themes-background-background-nav-header);
   margin-bottom: 0;
 
@@ -2392,7 +2412,7 @@ img {
   }
   .modal-dialog {
     max-width: 800px;
-    min-height: calc(100vh - 60px);
+    min-height: calc(60vh - 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2824,6 +2844,15 @@ img {
   .cardElct {
     margin-bottom: 20px;
     height: 100%;
+  }
+}
+.aimSec{
+  .cardElct{
+    align-items: center;
+    .font18,
+    .p16{
+      text-align: center;
+    }
   }
 }
 
@@ -3350,6 +3379,7 @@ img {
     border: 1px solid;
     border-color: var(--themes-border-border-neutral-primary);
     height: 100%;
+    width: 100%;
     display: inline-block;
     &:hover {
       .presImg {
@@ -3796,6 +3826,7 @@ img {
   font-size: 14px;
   font-weight: 500;
   z-index: 5;
+  display: none;
 }
 
 .subTitle {
@@ -3824,6 +3855,7 @@ img {
     .p16 {
       margin-bottom: 24px;
       height: calc(24px* 4);
+      overflow: hidden;
     } 
     .img {
       height: 250px;
@@ -4662,6 +4694,7 @@ img {
       flex-direction: column;
       gap: 5px;
       list-style: disc;
+      padding-#{$start-direction}: 25px;
       li{
         color: var(--themes-text-text-default);
         font-size: var(--text-xl-regular-font-size);
@@ -5136,7 +5169,19 @@ div.ms-webpart-cell-vertical-inline-table {
   line-height: 1.5;
 }
 
-
+section.menuWithBanner:before {
+  content: "نسخة تجريبية ";
+  position: absolute;
+  #{$end-direction}: 0;
+  top: 0;
+  background-color: #1b8354;
+  color: #fff;
+  padding: 5px 5px 7px;
+  border-radius: 0 0 5px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 5;
+}
 
 
 
@@ -5145,7 +5190,10 @@ div.ms-webpart-cell-vertical-inline-table {
 
 html[lang="en-US"]{
   .customAccordion .accordion-item .accordion-button,
-  .fullWidthMain .rightCardMn .txtPrs .p24{
+  .fullWidthMain .rightCardMn .txtPrs .p24,
+  .CardWhitOrGreen p,
+  .services-sec .right-sec p,
+  .fullWidthMain .rightCardMn p{
     direction: ltr;
   }
   .rate {
@@ -5179,4 +5227,58 @@ html[lang="en-US"]{
   .DGA-tabs1 .nav-item .nav-link.active{
     direction: ltr;
   }
+
+  .ElectronicSec .electWrapper .cardElct{
+    min-height: 300px;
+  }
+  .ms-rte-embedcode.ms-rte-embedwp .fullWidthMain,.fullWidthMain{
+      margin-top: -16px;
+  }
+  #WebPartWPQ1 .fullWidthMain{
+    margin-top: 0;
+  }
+  .ms-rte-embedcode.ms-rte-embedwp .fullWidthMain.AboutusSpace {
+    margin-top: -32px;
+}
+
+section.menuWithBanner:before {
+  content: "beta version";
+}
+
+
+  @media(max-width:1649.98px){
+    .services-sec .boxSer .boxImg .font18 {
+      height: calc(28px* 2);
+    }
+  }
+  @media(max-width:1499.98px){
+    .menuWithBanner .navbarMenu .navbar-nav .dropdown-toggle::after{
+      width: 14px;
+      margin-#{$start-direction}: 0;
+      margin-top: 5px;
+    }
+    .ElectronicSec .electWrapper .cardElct .p16 {
+      height: calc(24px* 5);
+      overflow: hidden;
+    }
+
+  }
+  @media (max-width: 991.98px) {
+    div#navbarSupportedContent {
+      transform: translateX(-100%);
+      #{$start-direction}:0;
+      #{$end-direction}:auto;
+    }
+    div#navbarSupportedContent.show {
+       transform: translateX(-29%); 
+    }
+    
+    .ElectronicSec .electWrapper .cardElct{
+      min-height: 260px;
+      .p16{
+        height: auto;
+      }
+    }
+  }
+
 }

@@ -164,6 +164,11 @@ async function copyToClipboard(textToCopy) {
 
   // increaseFontBtn.addEventListener("click", () => changeFontSize(true));
   // decreaseFontBtn.addEventListener("click", () => changeFontSize(false));
+
+
+  AOS.init({
+    duration: 1000,
+});
 });
 
 
