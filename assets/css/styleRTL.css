@@ -498,6 +498,10 @@ td, article, aside, canvas, details, embed, figure, figcaption, footer, header, 
   line-height: 1;
 }
 
+a {
+  color: var(--themes-text-text-primary);
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -1182,13 +1186,13 @@ img {
   z-index: 999;
   top: 0;
   right: 0;
-  height: 106px;
+  height: 86px;
   background-color: var(--themes-background-background-menu);
   border-bottom: 1px solid var(--primitives-colors-neutral-300);
 }
 
 .menuWithBanner .navDGA {
-  padding-top: 10px;
+  padding-top: 7px;
 }
 
 .menuWithBanner .navbarMenu {
@@ -1538,7 +1542,7 @@ img {
     left: 0;
     min-width: 100%;
     width: auto;
-    top: 90px;
+    top: 77px;
     right: 0;
     text-align: right;
     background-color: var(--themes-background-background-SA-flag);
@@ -1655,7 +1659,7 @@ img {
 
 .navDGA .logoMain a img {
   max-width: 100%;
-  max-height: 77px;
+  max-height: 65px;
 }
 
 .navDGA .navActions {
@@ -1679,8 +1683,8 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 72px;
-  height: 72px;
+  min-width: 60px;
+  height: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1706,8 +1710,8 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 72px;
-  height: 72px;
+  min-width: 60px;
+  height: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2409,13 +2413,20 @@ img {
 }
 
 .footerDGA .logos-box {
-  max-width: 275px;
-  margin-right: auto;
-  margin-left: 0;
+  max-width: 48%;
+  display: inline-block;
 }
 
 .footerDGA .logos-box img {
   max-width: 100%;
+}
+
+.footerDGA .digital-logo {
+  display: inline-block;
+  max-width: 45%;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  margin-right: 5%;
 }
 
 .modalSearch .modal-dialog {
@@ -3935,12 +3946,21 @@ img {
   direction: rtl;
   font-style: var(--text-xl-medium-font-style);
   position: relative;
+  border-radius: 0 !important;
 }
 
 .customAccordion .accordion-item .accordion-button::after {
   position: absolute;
   left: 23px;
   top: 23px;
+}
+
+.customAccordion .accordion-item .accordion-button:hover {
+  background-color: var(--themes-button-button-background-neutral-hovered);
+}
+
+.customAccordion .accordion-item .accordion-button:focus {
+  border: 2px solid var(--themes-border-border-black);
 }
 
 .rateContet {
@@ -4224,9 +4244,8 @@ img {
   letter-spacing: var(--text-md-medium-letter-spacing);
   line-height: var(--text-md-medium-line-height);
   position: relative;
-  color: var(--themes-link-link-oncolor);
+  color: var(--link-oncolor-disabled);
   padding-left: 24px;
-  text-decoration: underline;
   pointer-events: none;
 }
 
@@ -6922,7 +6941,7 @@ html[lang="en-US"] section.menuWithBanner:before {
     transition: transform 0.35s, -webkit-transform 0.35s;
     padding: 30px 20px;
     padding-right: 32%;
-    background-color: var(--themes-background-background-SA-flag);
+    background-color: var(--themes-background-background-white);
     overflow: hidden;
     overflow-y: auto;
     z-index: 9;
@@ -6939,12 +6958,19 @@ html[lang="en-US"] section.menuWithBanner:before {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    border-bottom: 2px solid #e9e9e9;
+    border-bottom: 2px solid var(--themes-border-border-neutral-primary);
     border-radius: unset;
     font-weight: bold;
     padding-right: 0;
     font-size: var(--text-md-medium-font-size);
-    color: var(--themes-text-text-oncolor-primary-duplicate);
+    color: var(--themes-text-text-default);
+  }
+  .menuWithBanner .navbarMenu .navbar-nav .nav-link.selected {
+    color: var(--themes-text-text-default);
+    background-color: var(--themes-background-background-white);
+  }
+  .menuWithBanner .navbarMenu .navbar-nav .nav-link.selected::before {
+    display: none;
   }
   body .menuWithBanner .navbarMenu .navbar-nav .nav-link.show::after {
     -webkit-transform: rotate(180deg);
@@ -6953,10 +6979,6 @@ html[lang="en-US"] section.menuWithBanner:before {
   .navbarMenu .navbar-toggler:focus {
     -webkit-box-shadow: unset;
             box-shadow: unset;
-  }
-  .menuWithBanner .navbarMenu .navbar-nav .dropdown-toggle::after {
-    -webkit-filter: brightness(0) invert(1);
-            filter: brightness(0) invert(1);
   }
   .services-sec .right-sec {
     height: auto;
@@ -7038,8 +7060,8 @@ html[lang="en-US"] section.menuWithBanner:before {
     margin-bottom: 36px;
   }
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu h4.title {
-    margin-bottom: 0;
-    margin-top: 0;
+    margin: 8px 0;
+    color: var(--themes-text-text-default);
   }
   .bannerMenu .contentBanner {
     height: calc(70vh - 160px);
@@ -7069,6 +7091,7 @@ html[lang="en-US"] section.menuWithBanner:before {
   }
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu {
     min-height: auto;
+    background-color: var(--themes-background-background-white);
   }
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu .col-lg-3 {
     margin-bottom: 0;
@@ -7273,6 +7296,23 @@ html[lang="en-US"] section.menuWithBanner:before {
   .digital-details .content-box {
     margin-bottom: var(--primitives-spacing-6-24px-duplicate);
   }
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li a {
+    color: var(--themes-text-text-default);
+  }
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li a::before {
+    -webkit-filter: brightness(0);
+            filter: brightness(0);
+  }
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul {
+    max-height: none;
+    overflow-y: auto;
+  }
+  body .menuWithBanner .navbarMenu .navbar-nav .nav-link.show {
+    border-bottom: 0;
+  }
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu {
+    padding: 0;
+  }
   /* end 992 */
 }
 
@@ -7353,16 +7393,13 @@ html[lang="en-US"] section.menuWithBanner:before {
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li a {
     padding: 0;
     padding-right: 15px;
-    font-size: var(--text-xs-regular-font-size);
+    color: var(--themes-text-text-default);
   }
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li a::before {
     top: 0px;
     width: 20px;
     height: 20px;
     display: none;
-  }
-  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu {
-    padding: 15px 0;
   }
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li {
     min-height: auto;
