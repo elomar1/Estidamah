@@ -12,15 +12,17 @@
     <link rel="stylesheet" href="../assets/css/bootstrapV5.min.css" />
     <!--  Font owl CSS -->
     <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="../assets/css/jquery-ui.css">
     <!-- DGA styles -->
     <link rel="stylesheet" href="../assets/css/globals.css" />
     <link rel="stylesheet" href="../assets/css/styleguide.css" />
 
     <!-- custom style -->
     <link rel="stylesheet" href="../assets/css/styleRTL.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- <link rel="stylesheet" href="../assets/css/flatpickr.min.css"> -->
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
     <title>Estidamah</title>
   </head>
 
@@ -1094,6 +1096,8 @@
     <script src="../assets/js/jQuery.js"></script>
     <script src="../assets/js/bootstrap.bundle.minV5.js"></script>
     <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/flatpickr.js"></script>
     <script src="../assets/js/custom.js"></script>
     <script>
 
@@ -1101,7 +1105,7 @@
 flatpickr("#datepicker", {
     dateFormat: "Y-m-d H:i",
     enableTime: true,
-    weekNumbers: true,
+    weekNumbers: false,
     locale: {
         firstDayOfWeek: 1, // Start with Monday
         weekdays: {
@@ -1114,6 +1118,64 @@ flatpickr("#datepicker", {
         },
     },
 });
+
+
+// $(function() {
+//             $("#datepicker").datepicker({
+//                 changeYear: true,  // Allows year selection
+//                 changeMonth: true, // Allows month selection
+//                 yearRange: "1900:2100",  // Range of years in the dropdown
+//                 dateFormat: 'yy-mm-dd'   // Format of the date
+//             });
+//         });
+
+
+// $(function() {
+//     // Arabic language settings for the datepicker
+//     $.datepicker.regional['ar'] = {
+//         closeText: 'إغلاق',
+//         prevText: '&#x3C;السابق',  // Right arrow for previous (in RTL)
+//         nextText: 'التالي&#x3E;',   // Left arrow for next (in RTL)
+//         currentText: 'اليوم',
+//         monthNames: ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو',
+//                      'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'],
+//         monthNamesShort: ['ينا', 'فبر', 'مار', 'أبر', 'ماي', 'يون',
+//                           'يول', 'أغس', 'سبت', 'أكت', 'نوف', 'ديس'],
+//         dayNames: ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'],
+//         dayNamesShort: ['أحد', 'اثن', 'ثلاث', 'أربع', 'خميس', 'جمعة', 'سبت'],
+//         dayNamesMin: ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'],
+//         weekHeader: 'أسبوع',
+//         dateFormat: 'dd/mm/yy',
+//         firstDay: 0,
+//         isRTL: true  // Set RTL layout
+//     };
+//     $.datepicker.setDefaults($.datepicker.regional['ar']);
+    
+//     // Initialize datepicker
+//     $("#datepicker").datepicker({
+//         beforeShowDay: function(date) {
+//             // Specific dates to highlight (e.g., 19th, 20th, and 23rd of the month)
+//             var highlightDays = [new Date(2024, 0, 19), new Date(2024, 0, 20), new Date(2024, 0, 23)];
+//             var dateString = $.datepicker.formatDate('yy-mm-dd', date);
+
+//             // Highlight specific dates with dark green circle
+//             if ($.inArray(dateString, highlightDays.map(d => $.datepicker.formatDate('yy-mm-dd', d))) !== -1) {
+//                 return [true, "ui-state-highlight", "Selected Day"];
+//             }
+
+//             // Highlight date range (e.g., 19th to 28th of January)
+//             var startRange = new Date(2024, 0, 19);
+//             var endRange = new Date(2024, 0, 28);
+//             if (date >= startRange && date <= endRange) {
+//                 return [true, "highlight-range", "Highlighted Range"];
+//             }
+
+//             return [true, ""];
+//         }
+//     });
+// });
+
+
 
 
     </script>

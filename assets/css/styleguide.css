@@ -578,6 +578,7 @@ You can apply the theme on any DOM node, not just the `body`
   --themes-background-background-neutral-100: var(--primitives-colors-neutral-100);
   --primitives-colors-neutral-50: rgba(249, 250, 251, 1);
   --primitives-colors-base-white: rgba(255, 255, 255, 1);
+  --button-background-transparent-hovered: rgba(255, 255, 255, .2);
   --primitives-colors-neutral-800: rgba(31, 42, 55, 1);
   --primitives-colors-base-black: rgba(22, 22, 22, 1);
   --primitives-colors-base-black-duplicate: rgba(22, 22, 22, 1);
@@ -966,6 +967,7 @@ You can apply the theme on any DOM node, not just the `body`
   --themes-text-text-primary-duplicate: var(--primitives-colors-primary-SA-flag-600-primary-duplicate);
   --themes-background-background-primary-50: var(--primitives-colors-primary-SA-flag-50);
   --themes-border-border-black: var(--primitives-colors-base-black);
+  --border-white: rgba(249, 250, 251, 1);
   --primitives-colors-neutral-50: rgba(249, 250, 251, 1);
   --primitives-colors-base-white: rgba(255, 255, 255, 1);
   --primitives-colors-neutral-800: rgba(31, 42, 55, 1);

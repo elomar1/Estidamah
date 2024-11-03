@@ -960,8 +960,8 @@ img {
   background: white;
   width: 2px;
   height: 2px;
-  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -6356,6 +6356,62 @@ html[lang="en-US"] section.menuWithBanner:before {
   }
 }
 
+/* start AO */
+body {
+  padding-top: 86px;
+}
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #c5c5c5;
+  border: unset;
+  min-width: 160px;
+  min-height: 175px;
+}
+
+.services-sec .boxSer .boxImg img {
+  height: 360px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (min-width: 1600px) {
+  .services-sec .boxSer .boxImg img {
+    height: 360px;
+  }
+}
+
+@media (min-width: 992px) {
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li a,
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu h4.title {
+    padding-right: var(--primitives-spacing-4-16px-duplicate);
+    padding-left: var(--primitives-spacing-4-16px-duplicate);
+    padding-top: var(--primitives-spacing-2-8px);
+    padding-bottom: var(--primitives-spacing-2-8px);
+    border-radius: var(--radius-radius-md);
+  }
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li a:hover,
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu h4.title:hover {
+    background-color: var(--button-background-transparent-hovered);
+  }
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li a:focus,
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu h4.title:focus {
+    border: 2px solid var(--border-white);
+    text-decoration: underline;
+  }
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li a {
+    padding-right: 35px;
+  }
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li a::before {
+    right: 8px;
+    top: 8px;
+  }
+}
+
+.green-btn.btnNew img {
+  height: unset !important;
+}
+
+/* end AO */
 @media (min-width: 1400px) {
   .container {
     max-width: 1360px;
@@ -7757,4 +7813,3 @@ html[lang="en-US"] section.menuWithBanner:before {
     height: 280px;
   }
 }
-/*# sourceMappingURL=styleLTR.css.map */
