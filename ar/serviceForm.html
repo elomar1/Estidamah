@@ -749,10 +749,12 @@
                                 <input type="number" class="form-control" id="input3" placeholder="يُرجى كتابةرقم الجوال">
                         </div>
                     </div>
+                    
                     <!-- end field  -->
                     <div class="col-md-4">
-                        <div class="inputText inputDate required">
-                          <input type="text" id="datepicker" />
+                        <div class="inputText inputDate inputDateAo required">
+                          <label for="startDate1" class="form-label label">تاريخ بدء الزيارة</label>
+                          <input type="text" id="datepicker" placeholder="mm/dd/yyyy"/>
                         </div>
                     </div>
                     <!-- end field  -->
@@ -1106,6 +1108,7 @@ flatpickr("#datepicker", {
     dateFormat: "Y-m-d H:i",
     enableTime: true,
     weekNumbers: false,
+   disableMobile: "true",
     locale: {
         firstDayOfWeek: 1, // Start with Monday
         weekdays: {

@@ -985,6 +985,7 @@ You can apply the theme on any DOM node, not just the `body`
   --primitives-spacing-4-16px: 16px;
   --primitives-spacing-0-0px: 0px;
   --primitives-spacing-3-12px: 12px;
+  --text-default: #161616;
   --primitives-colors-primary-SA-flag-400: rgba(84, 192, 138, 1);
   --primitives-spacing-2-8px-duplicate: 8px;
   --primitives-colors-neutral-100: rgba(243, 244, 246, 1);
@@ -1000,6 +1001,8 @@ You can apply the theme on any DOM node, not just the `body`
   --primitives-colors-neutral-600: rgba(77, 87, 97, 1);
   --primitives-colors-neutral-950-duplicate: rgba(13, 18, 28, 1);
   --primitives-colors-neutral-600-duplicate: rgba(77, 87, 97, 1);
+  --button-background-primary-default:#1b8354;
+  --text-tertiary:#64748B;
   --primitives-colors-neutral-900-duplicate: rgba(17, 25, 39, 1);
   --primitives-spacing-10-40px-duplicate: 40px;
   --primitives-spacing-6-24px-duplicate: 24px;
