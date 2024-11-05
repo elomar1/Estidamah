@@ -6696,7 +6696,7 @@ body .flatpickr-current-month .flatpickr-monthDropdown-months {
 
 .filepond--root [data-filepond-item-state="busy"] .filepond--file {
   background-image: url(../images/loader.svg) !important;
-  border: 1px solid #dc3545 !important;
+  border: 1px solid #D2D6DB !important;
   background-color: #f3f4f6 !important;
   background-repeat: no-repeat !important;
   background-position: 98% center !important;
