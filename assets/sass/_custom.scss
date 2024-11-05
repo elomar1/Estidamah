@@ -5594,12 +5594,16 @@ body .flatpickr-current-month .flatpickr-monthDropdown-months {
       font-size: var(--text-md-medium-font-size);
       color: var(  --text-display);
       font-weight: 500;
+      display: inline-block;
+      direction: rtl;
     }
     span {
       color: var(--text-primary-paragraph);
       font-size: var(--text-sm-regular-font-size);
       display: inline-block;
       padding: 8px 0 24px;
+      display: inline-block;
+      direction: rtl;
     }
   } 
   .filepond--item {
@@ -5614,12 +5618,17 @@ body .flatpickr-current-month .flatpickr-monthDropdown-months {
   }
   [data-filepond-item-state="idle"] .filepond--file {
     background: var(--background-neutral-100)  !important;
+    padding-right: 80px;
   }
   .filepond--file-action-button.filepond--action-retry-item-load svg,
   .filepond--file [data-align*='left'] svg {
       display: none;
   }
-  .filepond--file-action-button.filepond--action-retry-item-load,
+
+  [data-filepond-item-state="processing"] .filepond--file  {
+    background: red !important;
+}
+
   [data-filepond-item-state="load-invalid"] .filepond--file,
   [data-filepond-item-state="idle"] .filepond--file {
     color: var(--text-default);
@@ -5630,13 +5639,29 @@ body .flatpickr-current-month .flatpickr-monthDropdown-months {
     background-position: 98% center !important;
     background-size: 24px !important;
   }
+  [data-filepond-item-state="busy"] .filepond--file {
+    background-image: url(../images/loader.svg) !important;
+    border: 1px solid #dc3545 !important;
+    background-color: #f3f4f6 !important;
+    background-repeat: no-repeat !important;
+    background-position: 98% center !important;
+    background-size: 24px !important;
+    padding-right: 30px;
+    .filepond--action-abort-item-load::after {
+        display: none;
+    }
+  }
   [data-filepond-item-state="load-invalid"] .filepond--file {
     background-image: url(../images/filePondIconFail.svg) !important;
     border: 1px solid #dc3545 !important;
+    background-color: #f3f4f6 !important;
+    padding-right: 55px;
   }
-  .filepond--file-action-button.filepond--action-retry-item-load {
-    background-image: url(../images/loader.svg) !important;
-  }
+
+  .filepond--file .filepond--file-status {
+    display: none;
+}
+
   .filepond--file-info{
     align-items: end;
   }
@@ -5665,6 +5690,9 @@ body .flatpickr-current-month .flatpickr-monthDropdown-months {
 }
 .innerBanner {
   z-index: 2
+}
+.fileupload  {
+  margin-bottom: 70px;
 }
 /* end AO */
 
