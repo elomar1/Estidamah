@@ -20,6 +20,8 @@
     <!-- custom style -->
     <link rel="stylesheet" href="../assets/css/styleRTL.css" />
     <link rel="stylesheet" href="../assets/css/flatpickr.min.css">
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet" />
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
 
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
@@ -735,6 +737,20 @@
                             <span class="errMsg">يُرجى اختيار اليوم والشهر والسنة</span>
                         </div>
                     </div>
+              
+                    <div class="col-md-4">
+                      <!--  add class multipleUpload for multiple  { <div class="inputText required err multipleUpload ">}-->
+                      <div class="inputText required err  ">
+                        <label for="input1" class="form-label label">اسم </label>
+                        <input type="file"
+                          
+                        class="filepond"
+                        name="filepond"
+                        />
+  
+                      </div>
+                     
+                    </div>
                     <!-- end field  -->
                     <div class="col-md-4">
                         <div class="inputText required ">
@@ -848,7 +864,6 @@
                 </div>
                </div>
                 <!-- end 12 -->
-
                 <!-- end 12 -->
                <div class="col-md-12">
                 <div class="table-responsive">
@@ -1121,6 +1136,28 @@ flatpickr("#datepicker", {
         },
     },
 });
+
+
+
+const pond = FilePond.create(document.querySelector('input[type="file"]'), {
+                  allowFileEncode: true,
+                  allowFileTypeValidation: true,
+                  allowFileSizeValidation: true,
+                  required: true,
+                  acceptedFileTypes: [
+                      'image/jpeg', 'image/png', 'image/gif', 'image/bmp', 'image/webp', 'image/tiff'
+                  ], 
+                  maxFileSize: '10MB', // Example size limit
+                  labelIdle: `<div class='fileUpNew'>
+                              <img src="../assets/images/filePondIcon.svg" alt=""> <br>
+                              <strong>اسحب و أفلت الملفات هنا للرفع</strong> <br>
+                              <span>Maximum file size allowed is 10MB, supported file <br> formats include .jpg, .png, and .pdf.</span> <br> 
+                              <strong>تصفح الملفات</strong> <br>
+                              </div>`,
+                  labelInvalidField: "حقل مطلوب",
+                  labelFileTypeNotAllowed: "الملفات المسموحة: Pdf, doc, docx, txt, pdt",
+                  labelFileSizeNotAllowed: "حد اقصى 10 ميجا",
+              });
 
 
 // $(function() {

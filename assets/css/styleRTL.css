@@ -6374,6 +6374,7 @@ html[lang="en-US"] section.menuWithBanner:before {
 }
 
 .progSearc .cardResearch .resIcon,
+.researchSec .cardResearch .resIcon,
 .textWithCards .cardCenter .logo,
 .servCardIn .logo,
 .bgNew {
@@ -6395,6 +6396,7 @@ html[lang="en-US"] section.menuWithBanner:before {
 }
 
 .progSearc .cardResearch .resIcon img,
+.researchSec .cardResearch .resIcon img,
 .textWithCards .cardCenter .logo img,
 .servCardIn .logo img,
 .bgNew img {
@@ -6521,8 +6523,8 @@ body {
   padding: 15px;
   min-width: 430px;
   min-height: 430px;
-  -webkit-box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
-          box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  -webkit-box-shadow: 0px 12px 16px 6px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+          box-shadow: 0px 12px 16px 6px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
 }
 
 body .flatpickr-current-month .flatpickr-monthDropdown-months {
@@ -6607,6 +6609,124 @@ body .flatpickr-current-month .flatpickr-monthDropdown-months {
   .flatpickr-calendar span.flatpickr-weekday {
     font-size: var(--text-sm-regular-font-size);
   }
+}
+
+.filepond--root .filepond--drop-label {
+  height: auto !important;
+  background: var(--background-neutral-100);
+  border-color: var(--border-neutral-primary);
+}
+
+.filepond--root {
+  font-family: var(--text-sm-regular-font-family) !important;
+  background-color: transparent !important;
+}
+
+.filepond--root .filepond--list-scroller {
+  left: -17px;
+  right: -16px;
+}
+
+.filepond--root .filepond--drip {
+  background: transparent !important;
+}
+
+.filepond--root .fileUpNew {
+  padding: 24px;
+}
+
+.filepond--root .fileUpNew > img {
+  margin-bottom: 24px;
+}
+
+.filepond--root .fileUpNew strong {
+  font-size: var(--text-md-medium-font-size);
+  color: var(--text-display);
+  font-weight: 500;
+}
+
+.filepond--root .fileUpNew span {
+  color: var(--text-primary-paragraph);
+  font-size: var(--text-sm-regular-font-size);
+  display: inline-block;
+  padding: 8px 0 24px;
+}
+
+.filepond--root .filepond--item {
+  position: absolute;
+  top: 241px;
+}
+
+.filepond--root .filepond--drop-label {
+  -webkit-transform: unset !important;
+          transform: unset !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: unset !important;
+}
+
+.filepond--root [data-filepond-item-state="idle"] .filepond--file {
+  background: var(--background-neutral-100) !important;
+}
+
+.filepond--root .filepond--file-action-button.filepond--action-retry-item-load svg,
+.filepond--root .filepond--file [data-align*='left'] svg {
+  display: none;
+}
+
+.filepond--root .filepond--file-action-button.filepond--action-retry-item-load,
+.filepond--root [data-filepond-item-state="load-invalid"] .filepond--file,
+.filepond--root [data-filepond-item-state="idle"] .filepond--file {
+  color: var(--text-default);
+  font-size: var(--text-sm-regular-font-size);
+  border: 1px solid #D2D6DB;
+  background-image: url(../images/filePondIconSuc.svg) !important;
+  background-repeat: no-repeat !important;
+  background-position: 98% center !important;
+  background-size: 24px !important;
+}
+
+.filepond--root [data-filepond-item-state="load-invalid"] .filepond--file {
+  background-image: url(../images/filePondIconFail.svg) !important;
+  border: 1px solid #dc3545 !important;
+}
+
+.filepond--root .filepond--file-action-button.filepond--action-retry-item-load {
+  background-image: url(../images/loader.svg) !important;
+}
+
+.filepond--root .filepond--file-info {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.filepond--root .filepond--file-info .filepond--file-info-sub,
+.filepond--root .filepond--file-info .filepond--file-info-main {
+  color: var(--text-default);
+  font-size: var(--text-sm-regular-font-size);
+  text-align: right !important;
+}
+
+.filepond--root .filepond--file-action-button.filepond--file-action-button::after {
+  background: transparent url(../images/filePondIconX.svg) no-repeat;
+  background-position: center;
+  background-size: 15px;
+  right: -30px;
+  top: 8px;
+}
+
+.filepond--root *:not(.filepond--drop-label) {
+  background-color: transparent !important;
+}
+
+.multipleUpload .filepond--root .filepond--item {
+  position: absolute;
+  top: 16px !important;
+}
+
+.innerBanner {
+  z-index: 2;
 }
 
 /* end AO */

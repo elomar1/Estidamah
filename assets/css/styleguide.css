@@ -1003,6 +1003,10 @@ You can apply the theme on any DOM node, not just the `body`
   --primitives-colors-neutral-600-duplicate: rgba(77, 87, 97, 1);
   --button-background-primary-default:#1b8354;
   --text-tertiary:#64748B;
+  --border-neutral-primary:#64748B;
+  --text-display:#1F2A37;
+  --text-primary-paragraph:#384250;
+  --background-neutral-100:#F3F4F6;
   --primitives-colors-neutral-900-duplicate: rgba(17, 25, 39, 1);
   --primitives-spacing-10-40px-duplicate: 40px;
   --primitives-spacing-6-24px-duplicate: 24px;
