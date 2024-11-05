@@ -6757,6 +6757,22 @@ body .flatpickr-current-month .flatpickr-monthDropdown-months {
   margin-bottom: 70px;
 }
 
+@media (min-width: 12000px) {
+  .ElectronicSec .electWrapper .cardElct {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .filepond--root .fileUpNew {
+    padding: 15px 0 0;
+  }
+  .filepond--root .filepond--item {
+    position: absolute;
+    top: 205px;
+  }
+}
+
 .btnNew p {
   display: -webkit-box;
   display: -ms-flexbox;
