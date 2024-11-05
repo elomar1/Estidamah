@@ -5728,7 +5728,20 @@ body .flatpickr-current-month .flatpickr-monthDropdown-months {
   transition: 0.3s;
   color: var(--themes-text-text-oncolor-primary);
 }
-
+[dir="ltr"] .flatpickr-next-month {
+  left: 24px;
+  right: unset;
+}
+[dir="ltr"] .flatpickr-months .flatpickr-current-month {
+  width: 87%;
+}
+[dir="ltr"] .progSearc .cardResearch .resIcon,
+[dir="ltr"] .researchSec .cardResearch .resIcon,
+[dir="ltr"] .textWithCards .cardCenter .logo,
+[dir="ltr"] .servCardIn .logo, .bgNew {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 /* end AO */
 
 
