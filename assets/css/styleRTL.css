@@ -6757,6 +6757,27 @@ body .flatpickr-current-month .flatpickr-monthDropdown-months {
   margin-bottom: 70px;
 }
 
+.btnNew p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 40px;
+  height: 40px;
+  padding: var(--spacing-global-spacing-none) var(--spacing-button-buttons-lg-padding) var(--spacing-global-spacing-none) var(--spacing-button-buttons-lg-padding);
+  background-color: var(--themes-button-button-background-primary-default);
+  gap: var(--spacing-button-buttons-lg-gap);
+  border-radius: var(--radius-radius-radius-sm);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: var(--themes-text-text-oncolor-primary);
+}
+
 /* end AO */
 @media (min-width: 1400px) {
   .container {
