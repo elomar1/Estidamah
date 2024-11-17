@@ -2796,9 +2796,12 @@ img {
   }
 }
 .textWithCards {
-  padding: 40px 0;
+  padding: 15px 0;
   background-color: #fff;
+  .col-md-6{
+    margin-bottom: 40px;
 
+  }
   .p20 {
     margin-bottom: 40px;
   }
@@ -3497,6 +3500,12 @@ img {
     justify-content: center;
     margin-top: auto;
 
+  }
+}
+
+.servicesInner {
+  h2.title{
+    color: var(--button-background-primary-default);
   }
 }
 .EservicesClass,
@@ -4967,6 +4976,39 @@ img {
       }
     }
   }
+}
+
+
+.job-fields ,
+.center-specializations{
+  // padding-top: 53px;
+  // padding-bottom: 0;
+  .textAim{
+    .title{
+      font-family: var(--display-md-regular-font-family);
+      font-weight: 500;
+      font-size: var(--display-md-regular-font-size);
+      letter-spacing: var(--display-md-regular-letter-spacing);
+      line-height: var(--display-md-regular-line-height);
+      font-style: var(--display-md-regular-font-style);
+      color: var(--themes-text-text-primary);
+    }
+  }
+  .col-md-3{
+    margin-bottom: 40px;
+  }
+  .cardElct{
+    border: 1px solid var(--themes-border-border-neutral-primary);
+    height: 100%;
+  }
+}
+
+.job-fields {
+  padding-top: 53px;
+}
+.center-specializations{
+  padding-top: 13px;
+  padding-bottom: 40px;
 }
 
 

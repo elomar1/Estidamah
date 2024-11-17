@@ -960,8 +960,8 @@ img {
   background: white;
   width: 2px;
   height: 2px;
-  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -3793,8 +3793,12 @@ img {
 }
 
 .textWithCards {
-  padding: 40px 0;
+  padding: 15px 0;
   background-color: #fff;
+}
+
+.textWithCards .col-md-6 {
+  margin-bottom: 40px;
 }
 
 .textWithCards .p20 {
@@ -4627,6 +4631,10 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: auto;
+}
+
+.servicesInner h2.title {
+  color: var(--button-background-primary-default);
 }
 
 .EservicesClass,
@@ -5996,6 +6004,37 @@ img {
   line-height: var(--text-lg-regular-line-height);
   font-style: var(--text-lg-regular-font-style);
   text-decoration: underline;
+}
+
+.job-fields .textAim .title,
+.center-specializations .textAim .title {
+  font-family: var(--display-md-regular-font-family);
+  font-weight: 500;
+  font-size: var(--display-md-regular-font-size);
+  letter-spacing: var(--display-md-regular-letter-spacing);
+  line-height: var(--display-md-regular-line-height);
+  font-style: var(--display-md-regular-font-style);
+  color: var(--themes-text-text-primary);
+}
+
+.job-fields .col-md-3,
+.center-specializations .col-md-3 {
+  margin-bottom: 40px;
+}
+
+.job-fields .cardElct,
+.center-specializations .cardElct {
+  border: 1px solid var(--themes-border-border-neutral-primary);
+  height: 100%;
+}
+
+.job-fields {
+  padding-top: 53px;
+}
+
+.center-specializations {
+  padding-top: 13px;
+  padding-bottom: 40px;
 }
 
 .ms-rtestate-field {
@@ -8213,3 +8252,4 @@ body .flatpickr-current-month .flatpickr-monthDropdown-months {
     height: 280px;
   }
 }
+/*# sourceMappingURL=styleRTL.css.map */
