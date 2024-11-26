@@ -2818,7 +2818,7 @@ img {
       @extend .bgLogo;
       border: none;
       padding: 0;
-
+      min-width: auto;
       // &:not(:last-of-type) {
       //   margin-#{$end-direction}: 15px;
       // }

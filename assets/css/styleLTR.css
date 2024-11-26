@@ -3816,6 +3816,7 @@ img {
 .innerBanner .linksBnr button {
   border: none;
   padding: 0;
+  min-width: auto;
 }
 
 .innerBanner .titleBnr {
