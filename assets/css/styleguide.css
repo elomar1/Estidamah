@@ -174,10 +174,12 @@
   --themes-button-button-background-neutral-hovered: var(--primitives-colors-neutral-100);
   --themes-border-border-white-40: var(--themes-alpha-alpha-white-40);
   --themes-button-button-background-transparent-hovered: var(--themes-alpha-alpha-white-20);
+  --themes-button-button-background-neutral-pressed: #E5E7EB;
   --themes-button-button-background-neutral-default: var(--primitives-colors-neutral-100);
   --themes-alpha-alpha-white-40: var(--primitives-colors-alpha-alpha-white-40);
   --themes-alpha-alpha-white-20: var(--primitives-colors-alpha-alpha-white-20);
   --themes-button-button-background-primary-hovered: var(--primitives-colors-primary-SA-flag-700);
+  --themes-button-button-background-primary-pressed:#104631;
   --themes-button-button-background-oncolor-hovered: var(--themes-alpha-alpha-white-80);
   --themes-button-button-background-black-hovered: var(--primitives-colors-neutral-800);
   --themes-alpha-alpha-white-80: var(--primitives-colors-alpha-alpha-white-80);
