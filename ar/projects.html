@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="../assets/css/globals.css" />
     <link rel="stylesheet" href="../assets/css/styleguide.css" />
 
+    <!-- select2 style -->
+    <link rel="stylesheet" href="../assets/css/select2.min.css" />
+
     <!-- custom style -->
     <link rel="stylesheet" href="../assets/css/styleRTL.css" />
 
@@ -749,12 +752,31 @@
                               </select>
                         </div>
                         <!-- end select -->
-                        <div class="inputText select ">
+                        <!-- <div class="inputText select ">
                             <label for="select" class="form-label label">  الحالة  </label>
                             <select name="select" id="cars">
                               <option value="0"> يرجى الاختيار  </option>
                               </select>
-                        </div>
+                        </div> -->
+
+                        <!-- start select2 -->
+                        <div class="inputText select ">
+                          <label for="select" class="form-label label">  الحالة  </label>
+                          
+                          <select id="single" class="js-states form-control">
+                            <option>
+                              يرجى اختيار  المسئول
+                            </option>
+                            <option>إختيار</option>
+                            <option>إختيار</option>
+                            <option>إختيار</option>
+                          </select>
+                      </div> 
+
+
+
+                        <!-- end select2 -->
+
                         <!-- end select -->
                         <div class="green-btn">
                             <a href="#" class="">
@@ -1168,7 +1190,14 @@
     <script src="../assets/js/jQuery.js"></script>
     <script src="../assets/js/bootstrap.bundle.minV5.js"></script>
     <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/select2.min.js"></script>
     <script src="../assets/js/custom.js"></script>
-
+    <script>
+      $("#single").select2({
+          placeholder: "يرجى الاختيار",
+          allowClear: false,
+          minimumResultsForSearch: -1
+      });
+    </script>
   </body>
 </html>

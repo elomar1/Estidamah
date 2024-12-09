@@ -709,6 +709,10 @@
     .dropdownTitle {
     font-size: var(--text-xs-regular-font-size);
   }
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu h4.title .dropdownTitle {
+    color: var(  --text-default);
+  }
+
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu {
     min-height: auto;
     background-color:  var(--themes-background-background-white);
@@ -1294,7 +1298,8 @@
   }
   .bgLogo,
   .cardElct .ElcIcon .bg,
-  .innerBanner .linksBnr a {
+  .innerBanner .linksBnr a ,
+  .innerBanner .linksBnr button{
     width: 40px;
     height: 40px;
   }

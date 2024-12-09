@@ -181,6 +181,7 @@
   --themes-button-button-background-primary-hovered: var(--primitives-colors-primary-SA-flag-700);
   --themes-button-button-background-primary-pressed:#104631;
   --themes-button-button-background-oncolor-hovered: var(--themes-alpha-alpha-white-80);
+  --themes-button-button-background-oncolor-pressed: #fff9;
   --themes-button-button-background-black-hovered: var(--primitives-colors-neutral-800);
   --themes-alpha-alpha-white-80: var(--primitives-colors-alpha-alpha-white-80);
   --themes-border-border-black: var(--primitives-colors-base-black-duplicate);
@@ -247,6 +248,7 @@
   --primitives-colors-neutral-900-duplicate: rgba(17, 25, 39, 1);
   --primitives-colors-primary-SA-flag-400-duplicate: rgba(84, 192, 138, 1);
   --primitives-colors-alpha-alpha-600-primary-10-duplicate: rgba(27, 131, 84, 0.1);
+  --themes-form-field-background-hovered: #F3F4F6;
   --radius-radius-full: 9999px;
   --radius-radius-full-duplicate: 9999px;
   --radius-radius-lg: 16px;
@@ -279,7 +281,12 @@
   --radius-radius-radius-sm: var(--primitives-radius-radius-4);
 
 
-  --link-oncolor-disabled: #FFFFFF4D
+  --link-oncolor-disabled: #FFFFFF4D ;
+  --tooltip-background-dark: #1F2A37;
+  --tooltip-text-paragraph-dark: #F3F4F6;
+  --tooltip-padding: 8px;
+  --datecell-today-background-hovered: #E5E7EB
+
 }
 
 /*
@@ -554,6 +561,7 @@ You can apply the theme on any DOM node, not just the `body`
   --themes-form-field-background-default: var(--themes-background-background-card);
   --themes-background-background-SA-flag: var(--primitives-colors-green-900);
   --themes-form-field-border-default: var(--primitives-colors-neutral-400);
+  --themes-form-field-border-pressed: #0D121C;
   --themes-background-background-notification-white: var(--primitives-colors-base-white);
   --themes-background-background-neutral-400: var(--primitives-colors-neutral-400);
   --themes-button-button-background-neutral-hovered: var(--primitives-colors-neutral-100);
